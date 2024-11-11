@@ -1,5 +1,10 @@
+body  {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+    color: black;
 }
 
 .etsy-logo {
@@ -15,6 +20,8 @@ a {
 .nav-middle-part {
     display: flex;
     align-items: center;
+    margin-right: 20px;
+    flex: 1;
 }
 
 .nav-right-part {
@@ -37,8 +44,29 @@ a {
     height: 18px;
 }
 
+.right-nav-icons {
+    height: 24px;
+    width: 24px;
+}
+
+.right-nav-link {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    /* border: solid 1px; */
+    border-radius: 24px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.right-nav-link:hover {
+    background-color: #ccebff;
+}
+
 .nav-bar {
     height: 105px;
+    border-bottom: 1px solid gray;
 }
 
 .categories-button {
@@ -54,16 +82,112 @@ a {
 .top-nav {
     height: 48px;
     display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    margin: 12px 252px 0 252px;
 }
 
 .search-input {
     margin: 0;
-    border-style: solid;
     width: 50%;
     height: 48px;
-    font-family: inherit;
+    font-family: 'Graphik Webfont',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
     font-size: 16px;
-    border-radius: 24px 24px 24px 24px;
+    border-radius: 24px 0 0 24px;
     padding-left: 18px;
     min-width: 400px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex: 1;
+}
+
+.search-input:active {
+    border: none;
+}
+
+.search-button-icon {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.search-button {
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-radius: 0 24px 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 24px;
+    height: 48px;
+    flex: 1;
+}
+
+.sign-in-btn{
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 70px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.sign-in-btn:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.etsy-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottom-nav {
+    display: flex;
+    height: 36px;
+    align-items: center;
+}
+.gifts-link{
+    display: flex;
+    height: 20px;
+    font-size: 14px;
+
+}
+.gifts-link-icon{
+    height: 17px;
+    display: flex;
+    padding-right: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0 18px 0 0;
+}
+
+.nav-list-container {
+    display: flex;
+    width: 100%;
+    font-family: 'Graphik Webfont',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.bottom-nav-links {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 30px;
+    height: 15px;
+}
+.bottom-nav-links:hover {
+    background-color: rgb(219, 219, 219);
 }
