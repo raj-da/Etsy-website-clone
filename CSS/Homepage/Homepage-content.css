@@ -1,3 +1,172 @@
+.hero-content-container {
+    padding-right: 30px;
+    flex-basis: 40%;
+}
+
 .hero-content {
+    width: 100%;
+    background-color: #f19d27 ;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    border-radius: 12px 12px 0 0;
+}
+.hero-content-text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content-text p {
+    margin: 0;
+    padding-top: 10px;
+    font-size: .8rem;
+}
+.hero-content-text .hero-discount-text {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.hero-content-text .hero-title {
+    font-family: "GuardianEgyp-Thin", serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 53px;
+    font-weight: bold;
+}
+.shop-hero {
+    display: flex;
+}
+.shop-hero-container {
+    display: flex;
+    margin: 24px auto 0;
+
+    padding: 0 36px;
+}
+.hero-gid-container {
+    display: flex;
+    gap: 30px;
+    flex-basis: 59%;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+.hero-grid-first-images {
+    grid-column: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.hero-grid-images {
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    height: 100%;
+}
+.hero-first-img {
+    width: 100%;
+}
+.default-gap {
+    height: 90px;
+}
+.featured-section-max-width {
+    margin: 0 auto 90px;
+    padding: 0 36px;
+}
+.featured-section-max-width h4 {
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0;
+}
+.featured-items-list p{
+    font-size: 16px;
+    margin: 0;
+}
+.featured-items-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 18px;
+    width: 100%;
+}
+.featured-items-list li {
+    list-style: none;
+    width: calc(16.6667% - 25px);
+}
+.featured-item-img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+}
+.featured-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.featured-item-img img:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.editors-choice-max-width {
+    margin: 0 auto;
+    padding: 0 27px;
+}
+.editors-choice-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.editors-text {
+    padding-left: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+.editors-pics-text {
+    color: #595959;
+    font-size: 16px;
+
+}
+.primary-editors-text {
+    margin: 0 6px;
+    font-size: 27px;
+    font-weight: 500;
+}
+.editors-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222;
+    padding-bottom: 24px
+}
+.shop-unique-button {
+    background: #e9e9e9;
+    padding: 12px 18px;
+    font-size: 16px;
+    width: fit-content;
+    border-radius: 24px;
+    line-height: 1.5;
+}
+.editors-text h2, .editors-text p {
+    padding-right: 42%;
+    margin: 0;
+}
+
+.ep-image-inner {
+    padding: 9px;
+}
+.ep-image-inner img {
+    border-radius: 8px;
+    width: 100%;
+}
+.editors-choice-image-container {
+    flex-basis: 25%;
 }
