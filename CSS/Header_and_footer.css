@@ -30,6 +30,7 @@ header {
 .max-width-class {
     box-sizing: border-box;
     max-width: 1400px;
+    margin: 0 auto;
 }
 .justify-center {
     display: flex;
@@ -127,12 +128,10 @@ a {
 }
 
 .top-nav {
-    height: 48px;
     display: flex;
     justify-content: space-between;
     padding: 12px 36px 5px 36px;
     flex: 1;
-    box-sizing: content-box;
 }
 
 .search-input {
@@ -234,17 +233,21 @@ a {
     align-items: center;
 }
 .gifts-link{
-    display: flex;
+    display: block;
     height: 20px;
     font-size: 14px;
-    align-items: center;
 }
 .gifts-link-icon{
     height: 17px;
     display: flex;
     padding-right: 10px;
+    align-items: center;
 }
-
+.gift-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .nav-list {
     list-style: none;
     margin: 0 18px 0 0;

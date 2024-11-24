@@ -90,11 +90,12 @@
                     <ul class="nav-list-container">
                         <li class="nav-list"> <!--TODO fix THE GIFTS TEXT ALIGNMENT-->
                             <a href="" class="gifts-link bottom-nav-links">
-                                <span class="gifts-link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                        focusable="false">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
-                                        </path>
+                                <span class="gifts-link-icon">
+                                    <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                         focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
+                                    </path>
                                     </svg>
                                     <span style="padding-left: 5px;">Gifts</span>
                                 </span>
@@ -138,19 +139,64 @@
                                 <p>Participating shops only. Terms apply.</p>
                             </div>
                             <img class="hero-first-img" src="Resources/Homepage/socks.jpg" alt="">
+                            <a href="" type="button" class="hero-shop-now-b">
+                                Shop NOW
+                            </a>
+                            <div class="arc"></div>
                         </div>
                     </div>
 
                     <div class="hero-gid-container">
                         <div class="hero-grid">
-                            <img class="hero-grid-first-images" src="Resources/Homepage/Decor.jpg" alt="Decor">
-                            <img class="hero-grid-images" src="Resources/Homepage/kids.jpg" alt="kids">
-                            <img class="hero-grid-images" src="Resources/Homepage/happy.jpg" alt="kids">
+                            <div class="hero-grid-first-images pos-relative gradient-background">
+                                <img class="hero-grid-first-images" src="Resources/Homepage/decor.jpg" alt="Decor">
+                                <div>
+                                    <p>Gifts for Her up to 60% off</p>
+                                    <span>Shop Now</span>
+                                </div>
+                            </div>
+                            <div class="pos-relative">
+                                <img class="hero-grid-images" src="Resources/Homepage/kids.jpg" alt="kids">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 39.00 <span class="strike-trough">USD 70.00</span> </span>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="pos-relative">
+                                <img class="hero-grid-images" src="Resources/Homepage/happy.jpg" alt="kids">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 78.00 <span class="strike-trough">USD 99.00</span> </span>
+                                </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="hero-grid">
-                            <img class="hero-grid-first-images" src="Resources/Homepage/clothes.jpg" alt="Decor">
-                            <img class="hero-grid-images" src="Resources/Homepage/ring.jpg" alt="kids">
-                            <img class="hero-grid-images" src="Resources/Homepage/neckless.jpg" alt="kids">
+                            <div class="hero-grid-first-images pos-relative gradient-background">
+                                <img class="hero-grid-first-images" src="Resources/Homepage/clothes.jpg" alt="Decor">
+                                <div>
+                                    <p>Gifts for Her up to 60% off</p>
+                                    <span>Shop Now</span>
+                                </div>
+
+                            </div>
+                            <div class="pos-relative">
+                                <img class="hero-grid-images" src="Resources/Homepage/ring.jpg" alt="kids">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 24.00 <span class="strike-trough">USD 65.00</span> </span>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="pos-relative">
+                                <img class="hero-grid-images" src="Resources/Homepage/neckless.jpg" alt="kids">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 45.00 <span class="strike-trough">USD 87.00</span> </span>
+                                </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -290,24 +336,422 @@
                         Discover the most popular Etsy finds at every price
                     </h2>
                 </div>
-                <div class="discover-popular-content">
-                    <ul>
+                <div class="discover-popular-content-c">
+                    <ul class="discover-popular-content">
                         <li>
+                            <div class="popular-links-c">
                             <a href="">
                                 <div class="discover-image">
-                                    <img src="" alt="">
+                                    <img src="Resources/Homepage/Discover/bar-ware.jpg" alt="">
                                 </div>
                                 <div class="discover-image-title">
                                     <p class="discover-title-text">
-
+                                        Personalized barware
                                     </p>
                                 </div>
                             </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-links-c">
+                            <a href="">
+                                <div class="discover-image">
+                                    <img src="Resources/Homepage/Discover/kids.jpg" alt="">
+                                </div>
+                                <div class="discover-image-title">
+                                    <p class="discover-title-text">
+                                        Personalized portraits
+                                    </p>
+                                </div>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-links-c">
+                            <a href="">
+                                <div class="discover-image">
+                                    <img src="Resources/Homepage/Discover/kids-cloth.jpg" alt="">
+                                </div>
+                                <div class="discover-image-title">
+                                    <p class="discover-title-text">
+                                        Kid's name sweaters
+                                    </p>
+                                </div>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-links-c">
+                            <a href="">
+                                <div class="discover-image">
+                                    <img src="Resources/Homepage/Discover/serving-board.jpg" alt="">
+                                </div>
+                                <div class="discover-image-title">
+                                    <p class="discover-title-text">
+                                        Personalised serving board
+                                    </p>
+                                </div>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-links-c">
+                            <a href="">
+                                <div class="discover-image">
+                                    <img src="Resources/Homepage/Discover/wreaths.jpg" alt="">
+                                </div>
+                                <div class="discover-image-title">
+                                    <p class="discover-title-text">
+                                        wreaths
+                                    </p>
+                                </div>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-links-c">
+                                <a class="popular-links" href="">
+                                    <div class="discover-image">
+                                        <img src="Resources/Homepage/Discover/jewellery1.jpg" alt="">
+                                    </div>
+                                    <div class="discover-image-title">
+                                        <p class="discover-title-text">
+                                            Birthstone jewellery
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <div class="default-gap"></div>
+
+        <div class="deals-section">
+            <section class="max-width-class deals-container">
+                <div class="deals-title-and-buttons">
+                    <h2 class="discover-popular-text primary-editors-text">
+                        Amazing deals, updated daily
+                    </h2>
+                    <div class="daily-deals-nav-arrows">
+                        <button class="wt-btn">
+                            <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21.002a1 1 0 0 1-.664-.253L5.5 12.002l9.841-8.748a1 1 0 0 1 1.328 1.494L8.5 12.002l8.159 7.252A1 1 0 0 1 16 21.002"></path></svg></span>
+
+                        </button>
+                        <button class="wt-btn" data-daily-deals-next="1" aria-label="Next section" aria-describedby="daily-deals-twsh555y4qc">
+                            <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21"></path></svg></span>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="deals-content-container">
+                    <div class="deals-content">
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/socks-hanging.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        Personalized Christmas Stockings, 2024 Knitted Christmas Stockings with Name, Christmas Family Stockings, Holiday Stockings, Holiday Decor
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 4.81</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 9.63</span>
+                                            <span class="gray-text  small-text">(50% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.8</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(1010)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/necklessse.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        14K Gold Name Necklace, Personalized Name Pendant Necklace, Custom Name Necklace, Minimalist Name Jewelry for Women, Gift for Her
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 13.80</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 23.00</span>
+                                            <span class="gray-text  small-text">(40% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.8</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(26,680)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/bracelet.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        14k Gold Birthstone Bracelet, Baguette Birthstone Bracelet, Graduation Gift, Birthday Gift, Grandma Gift for Mom, Christmas Gift for Her
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 13.13</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 26.26</span>
+                                            <span class="gray-text  small-text">(50% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.9</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(600)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/stamps.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        RETURN ADDRESS STAMP Self Inking | Top Quality Self-Inking Stamper | Custom Stamp | Personalized Address Stamp
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 8.99</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 11.99</span>
+                                            <span class="gray-text  small-text">(30% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.9</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(54,997)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/dog-mitten.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        Customized Dog Mitt - Put Your Cute Dog on Custom Oven Mitts, Dog Lovers, Dog GIft, Dog Personalized, Dog Gift Socks, Christmas Gift
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 6.00</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 14.99</span>
+                                            <span class="gray-text  small-text">(60% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.9</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(47,190)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/faceless-portrait.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        Faceless Portrait, custom illustration, personalised photo, photo illustration, personalised portrait, boyfriend gift, girlfriend gift
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 5.20</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 13.00</span>
+                                            <span class="gray-text  small-text">(60% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.9</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(25,997)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="deals-card">
+                            <a href="" class="pop-up">
+                                <div class="deals-card-image">
+                                    <img src="Resources/Homepage/Deals/dog-socks.jpg" alt="">
+                                </div>
+                                <div class="deal-card-info">
+                                    <h3 class="dark-gray-color">
+                                        Customized Dog Socks -- Put Your Cute Dog on Custom Socks, Dog Lovers, Dog GIft, Cute Dog Personalized, Dog Gift Socks, Fathers Day Gift
+                                    </h3>
+                                    <div class="deal-price">
+                                        <p class="regular-price inline-text">USD 6.59</p>
+                                        <p class="discount-price inline-text">
+                                            <span class="gray-text strike-trough small-text">USD 10.99</span>
+                                            <span class="gray-text  small-text">(40% off)</span>
+                                        </p>
+                                    </div>
+                                    <span class="deal-rating">
+                                        <span class="rating small-text">4.9</span>
+                                        <span class="number-of-ratings">
+                                            <span class="star-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" aria-hidden="true" focusable="false">
+                                                  <path d="M20.828 9.154l-6.008-.528-2.36-5.545h-.92L9.18 8.626l-6.007.528-.284.876 4.548 3.954-1.353 5.871.744.541 5.172-3.1 5.172 3.1.744-.54-1.352-5.871 4.548-3.955-.284-.876z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="rating-number small-text">(47,767)</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="default-gap"></div>
+        <div class="editors-pics-section">
+            <div class="max-width-class editors-choice-max-width">
+                <div class="editors-choice-small-container">
+                    <div class="editors-choice-content-small">
+                        <div class="editors-text">
+                            <p class="editors-pics-text">Editors' Picks</p>
+                            <h2 class="primary-editors-text-small">
+                                The Holiday Hub
+                            </h2>
+                           
+                            <a class="shop-unique-button" href="">See more</a>
+                        </div>
+
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small">
+                                <img src="Resources/Homepage/Editors-small/candle.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 12.99</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small">
+                                <img src="Resources/Homepage/Editors-small/mugs.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 39.00 <span class="strike-trough">USD 70.00</span> </span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small-b">
+                                <img src="Resources/Homepage/Editors-small/bracelets1.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 37.11</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small-b">
+                                <img src="Resources/Homepage/Editors-small/socks1.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 22.99</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small-b">
+                                <img src="Resources/Homepage/Editors-small/portrait1.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 43.99</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editors-choice-image-container">
+                            <div class="ep-image-inner-small-b">
+                                <img src="Resources/Homepage/Editors-small/board.jpg" alt="">
+                                <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 98.99</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-small-right">
+                        <a href="">
+                            <img src="Resources/Homepage/Editors-small/christmas-tree.jpg" alt="">
+                            <div class="price">
+                                <span class="price-span">
+                                    <span class="price-pad">USD 124.99</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-gap"> </div>
 
     </main>
 
