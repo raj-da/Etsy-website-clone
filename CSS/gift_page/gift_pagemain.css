@@ -1,1 +1,55 @@
 
+#header {
+    text-align: center;
+    font-size: large;
+}
+
+
+.pick {
+    text-align: center;
+    font-size: 27.01px;
+}
+
+
+* {
+    font-family: Graphik Webfont,-apple-system,Helvetica Neue,Droid Sans,Arial,"sans-serif";
+}
+
+.tubble__image-bg {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 0.3 ease;
+
+}
+
+.tubble__image-wrapper:hover {
+    background-color: rgb(0, 0, 0, 0.12);
+    
+}
+
+#navigation_bar_for_gifts{
+    
+    padding: 10px;
+    white-space: nowrap;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+svg {
+    width: 37.6px;
+    height: 41.95px;
+}
+
+.tubble__image-wrapper{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+}
+
