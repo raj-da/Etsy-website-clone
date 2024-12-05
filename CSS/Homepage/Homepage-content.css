@@ -1,3 +1,7 @@
+img {
+    object-fit: cover;
+}
+
 .position-absolute{
     position: absolute;
 }
@@ -16,7 +20,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px;
     position: relative;
 }
 .hero-shop-now-b {
@@ -94,7 +98,7 @@
     height: 100%;
     border-radius: 12px 12px 0 0;
 }
-.hero-grid-first-images div {
+.hero-grid-first-images .hero-first-text {
     position: absolute;
     bottom: 0;
     padding: 0 18px 18px;
@@ -132,6 +136,7 @@
 .hero-first-img {
     width: 100%;
     clip-path: circle(farthest-side at 50% 100%);
+    border-radius: 12px;
 }
 .default-gap {
     height: 90px;
@@ -329,6 +334,13 @@
     padding-bottom: 24px;
 }
 
+.discover-popular-content-c{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px 0;
+}
+
 .discover-popular-content {
     display: flex;
     list-style: none;
@@ -417,6 +429,7 @@
 
 .deals-content-container {
     margin-left: -12px;
+    overflow: hidden;
 }
 .deals-content {
     margin: -9px;
@@ -424,6 +437,7 @@
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
+    scroll-behavior: smooth;
 }
 .pop-up {
     position: relative;
@@ -529,7 +543,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-basis: 97%
+    flex-basis: 100%
+}
+.ep-image-inner-small-top .price{
+    margin-bottom: 18px;
 }
 .editors-small-right img {
     width: 100%;
@@ -539,6 +556,7 @@
 .editors-small-right {
     padding-right: 18px;
     position: relative;
+    flex-basis: 47%;
 }
 .primary-editors-text-small {
     font-family: "Graphik Trial", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
@@ -561,6 +579,9 @@
     border-radius: 12px;
     transition: transform 0.3s;
 
+}
+.editors-small-right img{
+    height: auto;
 }
 .ep-image-inner-small {
     width: 100%;
@@ -597,7 +618,7 @@
     padding: 2px 8px;
     display: block;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     border: 1px solid gray;
 }
@@ -639,4 +660,100 @@
     overflow: clip; 
     border-radius: 12px;
     position: relative;
+}
+
+
+
+
+.shadow-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.subtle-shadow-down, .subtle-shadow-up, .subtle-shadow-all-side {
+    position: absolute;
+	width:100%;
+    height:100%;
+    transition : transform .2s;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    transition: box-shadow .3s ease-in-out;
+}
+.subtle-shadow-down:hover {
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+.subtle-shadow-up:hover {
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+.subtle-shadow-all-side:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .hero-grid-second {
+        display: none;
+    }
+    .hero-gid-container {
+        flex-basis: 40%;
+    }
+    .hero-content-container {
+        flex-basis: 60%;
+    }
+    .shop-hero-container {
+        padding:  0 24px;
+    }
+}
+@media (max-width: 900px) {
+  .editors-pics-section-small .editors-pics-text {
+    display: none;
+  }
+  .editors-pics-section-small .editors-text {
+    padding: 0;
+  }
+  .primary-editors-text-small {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .shop-unique-button {
+    transform: scale(.9);
+  }
+  .editors-pics-section-small .editors-choice-image-container {
+    /* display: none; */
+    flex-basis: 25%;
+  }
+  
+  .editors-choice-image-container {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .editors-text .primary-editors-text, .editors-text p{
+    padding-right: 10px;
+  } 
+  .featured-items-list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .featured-items-list li{
+    flex-basis: 30%;
+    padding: 10px;  
+    }
+    .discover-image {
+        width: auto;
+    }
+    .discover-popular-content li {
+        margin: 18px;
+        width: auto;
+    }
+    .categories-button {
+        /* display: none; */
+    }
+
 }
