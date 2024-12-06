@@ -15,21 +15,11 @@
     font-family: Graphik Webfont,-apple-system,Helvetica Neue,Droid Sans,Arial,"sans-serif";
 }
 
-.tubble__image-bg {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 0.3 ease;
-
-}
-
 .tubble__image-wrapper:hover {
     background-color: rgb(0, 0, 0, 0.12);
-    
 }
 
 #navigation_bar_for_gifts{
-    
     padding: 10px;
     white-space: nowrap;
 }
@@ -53,3 +43,6 @@ svg {
     align-items: center;    /* Centers vertically */
 }
 
+.side_by_side_imgs{
+    display: flex;
+}
