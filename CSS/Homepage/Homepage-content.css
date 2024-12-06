@@ -13,6 +13,11 @@ img {
 .pos-relative {
     position: relative;
 }
+.dashed-underline {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+}
 
 .hero-content {
     width: 100%;
@@ -249,8 +254,8 @@ img {
 }
 
 .hover-fav {
-    right: 25;
-    top: 25;
+    right: 25px;
+    top: 25px;
 }
 .favorite-button-icon-container {
     display: flex;
@@ -286,8 +291,8 @@ img {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 20;
-    right: 20;
+    bottom: 20px;
+    right: 20px;
     background-color: white;
     height: 20px;
     width: 20px;
@@ -356,19 +361,22 @@ img {
     width: 160px;
 }
 
-.popular-links {
+.popular-links-c .deals-card-shadow{
+    transform: scale(90%);
+}
+.popular-links-c {
     position: relative;
 }
-.popular-links-c:hover {
-    transition: box-shadow .3s ease-in-out;
-}
-.popular-links-c:hover {
-    padding: 10px;
-    margin: -10px -10px -10px -10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    height: fit-content;
-}
+/*.popular-links-c{*/
+/*    transition: box-shadow .3s ease-in-out;*/
+/*}*/
+/*.popular-links-c:hover {*/
+/*    padding: 10px;*/
+/*    margin: -10px -10px -10px -10px;*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);*/
+/*    border-radius: 12px;*/
+/*    height: fit-content;*/
+/*}*/
 .discover-image {
     width: 160px;
 }
@@ -406,8 +414,10 @@ img {
     display: inline-block;
     height: 24px;
     margin: 0;
-    top: 2px;
     width: 24px;
+}
+.gray-scroll-arrow {
+    fill: gray;
 }
 .wt-btn {
     position: relative;
@@ -425,15 +435,30 @@ img {
     border: none;
 
     cursor: pointer;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 30%);
 }
-
+.wt-text-truncate{
+    font-size: 11px;
+    margin: 0;
+}
+.wt-badge {
+    padding: 3px 6px;
+    background-color: #a0e193;
+    border-radius: 12px;
+}
+.promotion-badge {
+    margin-bottom: 3px;
+    padding-top: 4px;
+    line-height: 17px;
+}
 .deals-content-container {
     margin-left: -12px;
     overflow: hidden;
 }
 .deals-content {
     margin: -9px;
-    padding-left: 18px;
+    padding: 15px 0 15px 18px;
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
@@ -441,37 +466,15 @@ img {
 }
 .pop-up {
     position: relative;
-}
-/* .pop-up {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    padding: 9px;
-    margin: -9px;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42), opacity .15s ease-out, border-color .2s ease-out;
-    transform: scale(0.96);
-
-    /*transition: box-shadow 0.3s ease-in-out;
-}  */
-
-/* .pop-up:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 9px;
-    margin: -9px;
-    transform: scale(1);
-    opacity: 1;
-} */
-
-.deals-card a{
     display: block;
-    width: 100%;
-    height: 100%;
     border-radius: 12px;
-
 }
+
 .deals-card {
     margin-bottom: 12px;
     padding: 9px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: relative;
 }
@@ -578,7 +581,6 @@ img {
     width: 100%;
     border-radius: 12px;
     transition: transform 0.3s;
-
 }
 .editors-small-right img{
     height: auto;
@@ -595,18 +597,33 @@ img {
     position: relative;
     box-sizing: border-box;
 }
-.editors-small-right-a > .hover-fav {
-    top:10;
-    right: 10;
+.editors-small-right-a > .hover-fav, .pop-up .hover-fav {
+    top:10px;
+    right: 10px;
+    z-index: 10;
 }
 .ep-image-inner-small > .hover-fav, .ep-image-inner-small-b > .hover-fav{
-    top: 10;
+    top: 10px;
 }
-.ep-image-inner-small:hover > .hover-fav button, .ep-image-inner-small-b:hover > .hover-fav button, .editors-small-right-a:hover > .hover-fav button{
+.ep-image-inner-small:hover > .hover-fav button, .ep-image-inner-small-b:hover > .hover-fav button,
+.editors-small-right-a:hover > .hover-fav button, .pop-up:hover .hover-fav button, .pos-relative:hover .hover-fav button{
+    z-index: 2;
     opacity: 1;
     transform: translateX(0px);
 }
-
+.pos-relative .hover-fav{
+    top: 10px;
+    right: 10px;
+}
+.question-explanation-list{
+    list-style: initial;
+}
+.question-container {
+    display: inline;
+}
+.hover-fav:hover{
+    transform: scale(1.05);
+}
 .price {
     position: absolute;
     bottom: 0;
@@ -644,10 +661,10 @@ img {
     transition : transform .2s;
     border-radius: 12px;
 }
-.deals-card-shadow:hover {
+.deals-card:hover .deals-card-shadow, .popular-links-c:hover .deals-card-shadow {
     margin: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    z-index: 1;
     transform: scale(1.05);
 }
 .display-contents {
@@ -677,11 +694,10 @@ img {
     position: absolute;
 	width:100%;
     height:100%;
-    transition : transform .2s;
     border-radius: 12px;
     top: 0;
     left: 0;
-    transition: box-shadow .3s ease-in-out;
+    transition: transform .2s, box-shadow .3s ease-in-out;
 }
 .subtle-shadow-down:hover {
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
