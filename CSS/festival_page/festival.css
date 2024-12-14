@@ -4,6 +4,7 @@ body {
     color: #333333;
 }
 
+/* promotion */
 .last-minute-gifts {
     text-align: center;
     background-color: #3B4ED5;
@@ -12,6 +13,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* gift catagories */
 .header {
     margin-bottom: 30px;
 }
@@ -33,7 +35,6 @@ body {
     /* gap: 10px; */
     background-color: #fff;
     padding: 40px 0;
-    border-radius: 20px 20px 0 0;
     color: #333333;
 }
 
@@ -53,3 +54,64 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+
+/* Gift Card Section */
+/* .gift-card {
+    background-color: #F5F5F5;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    color: #333333;
+}
+
+.gift-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.gift-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.gift-card .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3B4ED5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+} */
+
+.gift-card-container {
+    padding: 0;
+    margin: auto;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: 50%; */
+}
+
+.gift-card-text {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gift-card-img {
+    flex: 1;
+    background-image: url(../../Resources/Festival/etsy_image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 200px;
+}
+
