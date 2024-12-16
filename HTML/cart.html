@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Etsy</title>
+    <link rel="icon" href="../Resources/favicon-32x32.png">
+    <link rel="stylesheet" href="../CSS/cart_page.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Etsy</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html" class="active">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="login.html" class="login">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cart">
+            <h1>Your Cart</h1>
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="../Resources/cart/product one.jpg" alt="Product 1- nike mid blazer" width="150" height="150">
+                    <div class="item-details">
+                        <h2>Nike Mid Blazer</h2>
+                        <p>Price: $60.00</p>
+                        <p>Quantity:</p>
+                        <input type="number" value="1" min="1">
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="../Resources/cart/product 2.jpg" alt="Product 2" height="150" width="150">
+                    <div class="item-details">
+                        <h2>Artisan Mug</h2>
+                        <p>Price: $20.00</p>
+                        <p>Quantity:</p>
+                        <input type="number" value="2" min="1">
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Summary</h2>
+                <p>Subtotal: $100.00</p>
+                <p>Shipping: $10.00</p>
+                <p>Total: $110.00</p>
+                <button class="checkout">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Etsy. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="help.html">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
