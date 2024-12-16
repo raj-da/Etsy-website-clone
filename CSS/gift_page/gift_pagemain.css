@@ -10,39 +10,692 @@
     font-size: 27.01px;
 }
 
-
 * {
     font-family: Graphik Webfont,-apple-system,Helvetica Neue,Droid Sans,Arial,"sans-serif";
+}
+
+#navigation_bar_for_gifts{
+    display: flex;
+    align-items: start; /*align svgs to the top of the flex container*/
+    
+}
+
+svg {
+    width: 44px;
+    height: 44px;
+}
+
+.tubble__image-wrapper{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+}
+
+.tubble__image-bg{
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
 .tubble__image-wrapper:hover {
     background-color: rgb(0, 0, 0, 0.12);
 }
 
-#navigation_bar_for_gifts{
-    padding: 10px;
-    white-space: nowrap;
-}
-
-button {
+.click{
+    cursor: pointer;
     background-color: transparent;
     border-color: transparent;
 }
 
-svg {
-    width: 37.6px;
-    height: 41.95px;
-}
-
-.tubble__image-wrapper{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-}
-
 .side_by_side_imgs{
     display: flex;
+    object-fit: cover;
+    
+}
+
+img {
+    width: 100%; /* Image takes up the width of its container */
+    max-width: 316.5px; /* Optional: Limits the maximum size */
+    height: auto; /* Maintains the aspect ratio */
+    padding: 10px;
+    
+}
+
+/* Grid style part */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: px; /* Spacing between boxes */
+    padding: 20px;
+}
+.box {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.box img {
+    width: 100%; /* Make the image fill its box */
+    height: auto;
+    display: block;
+}
+.box p {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 0;
+}
+
+/* Call to action buttons bellow the first grid */
+
+.call_to_action_button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 25px;
+            cursor: pointer;
+}
+
+.call_to_action_button_center{
+    text-align: center; margin-top: 20px;
+}
+
+.header_style{
+    text-align: center; margin-top: 30px; font-family: Arial, sans-serif;
+}
+
+.text_choices_container{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.text_box{
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* styleing Browse by interest for the best gifts! */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Container */
+.product-section {
+    width: 100%;
+    background: #fff;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-title h2 {
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.header-title p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.browse-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.browse-link:hover {
+    text-decoration: underline;
+}
+
+/* Product Row */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Product Card */
+.product-card {
+    flex: 1 1 calc(16% - 15px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image and Video Styling */
+.product-media {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-title {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-rating {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.product-price {
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+}
+
+.product-price .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.product-price .discount {
+    color: #008000;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-card {
+        flex: 1 1 100%;
+    }
+}
+
+.truncate_text{
+    display: inline-block;
+    font-size:xx-small;
+}
+
+
+
+
+/* Related gift ideas for: Sentimental Gifts*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Section Container */
+.related-gifts {
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.browse-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.browse-link:hover {
+    text-decoration: underline;
+}
+
+/* Gift Cards Container */
+.gift-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Individual Gift Card */
+.gift-card {
+    flex: 1 1 calc(20% - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #A885F2; /* Card background */
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: #333;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gift Text Styling */
+.gift-text {
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+    background: inherit; /* Matches the card background */
+    color: white;
+}
+
+/* Image Container with Clip Path */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    clip-path: circle(80% at 50% 90%);
+    background: #fff; /* Optional fallback */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gift-card {
+        flex: 1 1 calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gift-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Gride 4 */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Section Container */
+.sibling-gift-section {
+    width: 90%;
+}
+
+/* Header */
+.sibling-gift-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sibling-gift-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.sibling-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.sibling-shop-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.sibling-shop-link:hover {
+    text-decoration: underline;
+}
+
+/* Gift Cards Container */
+.sibling-gift-cards {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Individual Card */
+.sibling-gift-card {
+    flex: 0 0 auto;
+    width: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sibling-gift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sibling-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.sibling-card-text {
+
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sibling-gift-cards {
+        flex-wrap: nowrap;
+    }
+
+    .sibling-gift-card {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sibling-gift-card {
+        width: 130px;
+    }
+
+    .sibling-gift-title {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* parent tags */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Container */
+.shop-section {
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.shop-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Cards Container */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Card */
+.shop-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 180px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.shop-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Icon Container */
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #e6f4ff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container::before {
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+/* Icons for Each Card */
+.coworker::before {
+    background-image: url('https://via.placeholder.com/24?text=C'); /* Replace with coworker icon */
+}
+
+.friend::before {
+    background-image: url('https://via.placeholder.com/24?text=F'); /* Replace with friend icon */
+}
+
+.partner::before {
+    background-image: url('https://via.placeholder.com/24?text=P'); /* Replace with partner icon */
+}
+
+.parent::before {
+    background-image: url('https://via.placeholder.com/24?text=PA'); /* Replace with parent icon */
+}
+
+.sibling::before {
+    background-image: url('https://via.placeholder.com/24?text=S'); /* Replace with sibling icon */
+}
+
+.teacher::before {
+    background-image: url('https://via.placeholder.com/24?text=T'); /* Replace with teacher icon */
+}
+
+/* Text */
+.shop-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.center_alignment{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+/*<!-- Sixth Grid -->*/
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background-color: #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 0 10%;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Price Tag */
+.price-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
