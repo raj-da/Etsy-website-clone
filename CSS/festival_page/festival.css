@@ -29,23 +29,30 @@ body {
 }
 
 .gift-catagories {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 10px; */
+    gap: 10px; */
+    justify-content: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 40px;
     background-color: #fff;
     padding: 40px 0;
     color: #333333;
 }
 
 .catagory {
+    position: relative;
+    top: -120px;
     text-align: center;
     width: 150px;
 }
 
 .catagory img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -115,3 +122,28 @@ body {
     height: 200px;
 }
 
+
+/* delightful download section */
+.download-container {
+    display: flex;
+    gap: 5px;
+}
+
+.card {
+    border: solid 1px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 5px;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.image img{
+    border-radius: 10px;
+}
