@@ -1,11 +1,12 @@
 
 :root {
     --transition-scale: transform 0.1s ease, background-color 0.1s ease;
+    --graphic-font: 'Graphik Trial', -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: "Graphik Trial",-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-family: var(--graphic-font), serif;
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
@@ -75,54 +76,43 @@ a {
     width: 24px;
 }
 
-/*.right-nav-link {*/
-/*    display: flex;*/
-/*    height: 48px;*/
-/*    width: 48px;*/
-/*    align-items: center;*/
-/*    border-radius: 24px;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    justify-content: center;*/
-/*}*/
-/*.right-nav-link:hover {*/
-/*    background-color: #ccebff;*/
-/*}*/
-
-.right-nav-link-container {
-    position: relative;
-}
 .right-nav-link {
-    position: relative; /* Position needed for pseudo-element */
     display: flex;
     height: 48px;
     width: 48px;
     align-items: center;
     border-radius: 24px;
-    margin: 0;
     padding: 0;
     justify-content: center;
-    overflow: hidden; /* Ensures no overflow from pseudo-element */
-    z-index: 1; /* To ensure content is above the pseudo-element */
+    overflow: hidden;
+    z-index: 1;
 }
 
-.right-nav-link::before {
+.right-nav-link::before,
+.sign-in-btn:hover::before,
+.bottom-nav-links::before,
+.sign-in-btn::before,
+.categories-button::before,
+.popover_arrow::after,
+.last-left-container::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent; /* Initial background color */
-    z-index: -1; /* Puts the background behind the content */
+    z-index: -1;
+}
+.right-nav-link::before {
+    background-color: transparent;
     transition: var(--transition-scale);
-    border-radius: 24px; /* Match the border radius */
+    border-radius: 24px;
     transform: scale(50%);
 }
 
 .right-nav-link:hover::before {
-    transform: scale(1.05); /* Scale the background pseudo-element */
-    background-color: #ccebff; /* Change background color */
+    transform: scale(1.05);
+    background-color: #ccebff;
 }
 
 
@@ -174,22 +164,8 @@ a {
     font-size: 14px;
     padding-left: 5px;
 }
-
-/*.categories-button {*/
-/*    background-color: white;*/
-/*    border: none;*/
-/*    display: flex;*/
-/*    align-items: flex-end;*/
-/*    justify-content: space-between;*/
-/*    min-width: 100px;*/
-/*    padding: 9px 15px 9px 15px;*/
-/*    border-radius: 15px;*/
-/*    margin-right: 6px;*/
-/*    font-size: 14px;*/
-/*    font-family: "Graphik Trial", sans-serif;*/
-/*}*/
 .categories-button {
-    position: relative; /* Position needed for pseudo-element */
+    position: relative;
     background-color: white;
     border: none;
     display: flex;
@@ -200,21 +176,15 @@ a {
     border-radius: 15px;
     margin-right: 6px;
     font-size: 14px;
-    font-family: "Graphik Trial", sans-serif;
-    overflow: hidden; /* Ensures no overflow from pseudo-element */
-    z-index: 1; /* To ensure content is above the pseudo-element */
+    overflow: hidden;
+    z-index: 1;
 }
-
 
 
 .categories-button:hover::before {
-    transform: scale(1); /* Scale the background pseudo-element */
-    background-color: #e9e9e9; /* Example hover background color */
+    transform: scale(1);
+    background-color: #e9e9e9;
 }
-
-/*.categories-button:hover {*/
-/*    background-color: #e9e9e9;*/
-/*}*/
 
 .top-nav {
     display: flex;
@@ -226,7 +196,6 @@ a {
 .search-input {
     margin: 0;
     width: 50%;
-    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
     font-size: 16px;
     border-radius: 24px 0 0 24px;
     padding: 9px 42px 9px 18px;
@@ -248,7 +217,6 @@ a {
 .search-input:focus-visible{
     border: 2px solid;
     border-right-width: 0;
-
 }
 
 .search-button-icon {
@@ -265,7 +233,7 @@ a {
     height: 100%;
 }
 
-.search-bar:hover .search-button-icon {
+.search-bar:hover .search-button-icon{
     height: 44px;
     padding: 0 11px 0 11px;
     display: flex;
@@ -299,14 +267,14 @@ a {
 }
 
 .sign-in-btn {
-    position: relative; /* Position needed for pseudo-element */
+    position: relative;
     background-color: white;
     border-radius: 20px;
     border: none;
     padding: 9px 15px;
-    overflow: hidden; /* Ensures no overflow from pseudo-element */
-    z-index: 1; /* To ensure content is above the pseudo-element */
-    font-family: 'Graphik Trial', "Graphik Trial", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    overflow: hidden;
+    z-index: 1;
+    font-family: var(--graphic-font), serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1;
@@ -315,8 +283,9 @@ a {
 
 
 .sign-in-btn:hover::before {
-    transform: scale(1.05); /* Scale the background pseudo-element */
-    background-color: #e9e9e9; /* Change background color */
+    z-index: -1;
+    transform: scale(1.05);
+    background-color: #e9e9e9;
 }
 
 .etsy-icon{
@@ -356,11 +325,9 @@ a {
 
 .nav-list-container {
     display: flex;
-    width: 100%;
-    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-family: var(--graphic-font), serif;
     font-size: 13px;
     font-weight: 500;
-    height: 100%;
     align-items: center;
     justify-content: center;
     padding-top: 4px;
@@ -368,15 +335,6 @@ a {
     margin: 0;
 }
 
-/*.bottom-nav-links {*/
-/*    padding: 9px 15px;*/
-/*    border: none;*/
-/*    border-radius: 30px;*/
-/*    height: 15px;*/
-/*}*/
-/*.bottom-nav-links:hover {*/
-/*    background-color: #e9e9e9;*/
-/*}*/
 .bottom-nav-links {
     position: relative;
     padding: 9px 15px;
@@ -387,15 +345,11 @@ a {
     z-index: 1;
     font-weight: 400;
 }
-.bottom-nav-links::before, .sign-in-btn::before, .categories-button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
+.bottom-nav-links::before,
+.sign-in-btn::before,
+.categories-button::before{
     background-color: transparent;
-    z-index: -1;
     transition: var(--transition-scale);
     border-radius: 30px;
     transform: scale(50%);
@@ -429,7 +383,6 @@ a {
 }
 .footer1 .read-our-story{
     text-decoration: underline;
-    font-family: "Graphik Trial", sans-serif;
     justify-content: space-around;
 }
 
@@ -462,7 +415,6 @@ a {
 
 .what-is-etsy-divs-middle {
     margin:  0 36px;
-    
 }
 .what-is-etsy-divs h3{
     font-size: 27px;
@@ -482,7 +434,6 @@ a {
     flex-direction: column;
     justify-content: space-around;
     letter-spacing: .16px;
-    font-family: 'Graphik Trial', sans-serif;
 }
 .what-is-etsy-container{
     font-weight: 300;
@@ -540,14 +491,13 @@ footer {
 }
 
 .email-list form{
-    height: 98px;
+    /*height: 98px;*/
     margin: 0;
 }
 
 .email-list p{
     text-align: center;
     font-size: 1rem;
-    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 0;
 }
 
@@ -558,13 +508,13 @@ footer {
 
 #email-list-email, .email-submit { 
     border: 1px solid lightgray;
-    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
 }
 
 #email-list-email {
     height: 3rem;
-    width: 25rem;
+    max-width: 300px;
+    flex: 1;
     padding-left: 20px;
     border-right-width: 0;
     border-radius: 24px 0 0 24px;
@@ -575,13 +525,12 @@ footer {
     padding: 12px 21px 12px 15px;
     background-color: #fff;
     font-weight: 400;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, font-weight 0.5s;
 }
 
 .email-submit:hover, .email-list-input:focus-within .email-submit{
     background-color: #000;
     color: white;
-    font-weight: 500;
 }
 .footer-renewable {
     display: flex;
@@ -606,7 +555,7 @@ footer {
     padding-left: 15px;
 }
 .what-is-etsy-divs .question-explanation {
-    transform: translate(-50px, -280px);
+    transform: translate(-30px, -250px);
 }
 
 .question-explanation {
@@ -634,25 +583,20 @@ footer {
     width: 12px;
 }
 .popover_arrow::after {
-    content: "";
     background-color:  #fff;
     border: 0 solid  #949494;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     transform: rotate(45deg);
 }
 
-.renewable-button:hover ~ .question-explanation, .question-explanation:hover,
+.renewable-button:hover ~ .question-explanation,
+.question-explanation:hover,
 .question-container:hover .question-explanation{
     visibility: visible;
     transform: translate(0px, -180px);
     opacity: 1;
 }
 .question-container:hover .question-explanation {
-    transform: translate(-50px, -300px);
+    transform: translate(-30px, -280px);
 }
 .renewable-icon {
     height: 36px;
@@ -730,7 +674,6 @@ footer {
     padding: 0 6px 0 0;
     line-height: 1.4;
     font-size: 13px;
-
 }
 .footer-links {
     display: flex;
@@ -740,7 +683,6 @@ footer {
 }
 .footer-links-inside {
     display: flex;
-    width: 100%;
 }
 .links h3 {
     margin-top: 0;
@@ -757,7 +699,6 @@ footer {
     margin-top: 20px;
 }
 .footer-social-media {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -773,7 +714,6 @@ footer {
     height: 24px;
     padding: 6px;
     transition: background-color 0.2s;
-    /* transition: ; */
     transform-origin: center;
     border-radius: 100%;
     background-size: 80%;
@@ -823,28 +763,21 @@ footer {
     padding: 0 12px;
     font-weight: 500;
     border-radius: 24px;
-    position: relative; /* Required for positioning the pseudo-element */
-    overflow: hidden; /* Ensures the pseudo-element is contained */
-    z-index: 1; /* Ensuring content is layered above the pseudo-element */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     transition: background-color .2s;
 }
 
 .last-left-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* Ensures it stays behind the content */
     transition: transform 0.2s ease, background-color 0.2s ease;
     border-radius: 24px;
     transform: scale(10%);
 }
 
 .last-left-container:hover::before {
-    transform: scale(1.1); /* Scale the pseudo-element on hover */
-    background-color: #3f3f3f; /* Color for the pseudo-element */
+    transform: scale(1.1);
+    background-color: #3f3f3f;
 }
 
 .region-div a{ 
@@ -886,6 +819,8 @@ footer {
 .holiday-hub-c {
     display: contents;
 }
+
+
 @media (max-width: 900px) {
     .hidden-categories-button {
         display: inline-block;
@@ -897,7 +832,7 @@ footer {
         display: none;
     }
     .etsy-logo {
-        padding-right: 200px;
+        padding-right: 120px;
     }
     
     .top-nav {
@@ -951,8 +886,23 @@ footer {
         font-size: 13px;
     }
 }
+@media (max-width: 600px) {
+    .hero-gid-container{
+        display: none !important;
+    }
+    .hero-content-container {
+        flex-basis: 100% !important;
+        padding: 0 !important;
+    }
+    .editors-pics-section-small {
+        display: none;
+    }
+}
 
 @media (max-width: 400px){
+    html {
+        min-width: 400px;
+    }
     .hero-gid-container{
         display: none !important;
     }
@@ -971,18 +921,15 @@ footer {
     .hidden-categories-button {
         margin-left: -12px;
     }
-    .email-list-email {
+    #email-list-email {
         width: 10rem;
     }
     .search-input{
         min-width: auto;
     }
-    .hero-content-container {
-        flex-basis: 100% !important;
-        padding: 0 !important;
-    }
+
     .max-width-class{
-        padding: 0 ;
+        padding: 0;
     }
     .shop-hero-container{
         padding: 10px !important;

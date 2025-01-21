@@ -50,147 +50,146 @@
 
 <body>
     <header>
+        <!--TODO: add the dropdown list for categories button-->
 
-        <div class="nav-bar-container">
-            <nav class="nav-bar">
-                <div class="top-nav-container">
-                    <div class="top-nav max-width-class">
-                        <div class="nav-left-part">
-                            <a href="Index.html">
-                                <img class="etsy-logo" src="Resources/Homepage/Etsy_logo.svg.png" alt="Etsy Logo">
-                            </a>
-                            <button class="categories-button">
-                                <svg class="Hamburger-menu" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                    focusable="false" viewBox="0 0 18 18">
-                                    <rect x="2" y="8" width="14" height="2"></rect>
-                                    <rect x="2" y="13" width="14" height="2"></rect>
-                                    <rect x="2" y="3" width="14" height="2"></rect>
-                                </svg>
-                                <span class="categories-text">Categories</span>
+        <nav class="nav-bar">
+            <div class="top-nav-container">
+                <div class="top-nav max-width-class">
+                    <div class="nav-left-part">
+                        <a href="index.html">
+                            <img class="etsy-logo" src="Resources/Homepage/Etsy_logo.svg.png" alt="Etsy Logo">
+                        </a>
+                        <button class="categories-button">
+                            <svg class="Hamburger-menu" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                focusable="false" viewBox="0 0 18 18">
+                                <rect x="2" y="8" width="14" height="2"></rect>
+                                <rect x="2" y="13" width="14" height="2"></rect>
+                                <rect x="2" y="3" width="14" height="2"></rect>
+                            </svg>
+                            <span class="categories-text">Categories</span>
+                        </button>
+                    </div>
+                    <div class="nav-middle-part">
+                        <div class="search-bar">
+                            <button class="hidden-categories-button">
+                                <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 7H3V5h18zm-5 6H3v-2h13zm5 6H3v-2h18z"></path>
+                                    </svg></span>
                             </button>
-                        </div>
-                        <div class="nav-middle-part">
-                            <div class="search-bar">
-                                <button class="hidden-categories-button right-nav-link">
-                                    <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M21 7H3V5h18zm-5 6H3v-2h13zm5 6H3v-2h18z"></path>
+                            <input class="search-input" placeholder="Search for anything">
+                            <div class="search-button-container">
+                                <button class="search-button">
+                                    <span class="search-button-icon"><svg class="right-nav-icons search-icon"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13">
+                                            </path>
                                         </svg></span>
                                 </button>
-                                <input class="search-input" placeholder="Search for anything">
-                                <div class="search-button-container">
-                                    <button class="search-button">
-                                        <span class="search-button-icon"><svg class="right-nav-icons search-icon"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13">
-                                                </path>
-                                            </svg></span>
-                                    </button>
-                                </div>
                             </div>
                         </div>
-                        <div class="nav-right-part">
-                            <button class="sign-in-btn">sign in</button>
-                            <span class="right-nav-link-container">
-                                <a href="" class="right-nav-link">
-                                <span class="etsy-icon right-nav-icons"><svg class="right-nav-icons"
-                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61">
-                                        </path>
-                                    </svg></span></a>
-                                <span class="right-nav-link-tooltip" id="nav-fav-button-tooltip">
-                                    Favorites
-                                </span>
+                    </div>
+                    <div class="nav-right-part">
+                        <button class="sign-in-btn">sign in</button>
+                        <span class="right-nav-link-container pos-relative">
+                            <a href="" class="right-nav-link no-margin pos-relative">
+                            <span class="etsy-icon right-nav-icons"><svg class="right-nav-icons"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61">
+                                    </path>
+                                </svg></span></a>
+                            <span class="right-nav-link-tooltip" id="nav-fav-button-tooltip">
+                                Favorites
                             </span>
-                            <span class="right-nav-link-container">
-                                <a href="" class="right-nav-link"><span
-                                    class="etsy-icon right-nav-icons"><svg
-                                    class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    aria-hidden="true" focusable="false">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
-                                        </path>
-                                    </svg></span></a>
-                                <span class="right-nav-link-tooltip">
-                                    Gifts
-                                </span>
+                        </span>
+                        <span class="right-nav-link-container pos-relative">
+                            <a href="" class="right-nav-link no-margin pos-relative"><span
+                                class="etsy-icon right-nav-icons"><svg
+                                class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
+                                    </path>
+                                </svg></span></a>
+                            <span class="right-nav-link-tooltip">
+                                Gifts
                             </span>
-                            <span class="right-nav-link-container">
-                                <a href="" class="right-nav-link"><span
-                                    class="right-nav-icons etsy-icon"><svg
-                                    class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    aria-hidden="true" focusable="false">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.307l2.4-12zM7.82 15l-1.6-8h14.227l-1.6 8z">
-                                        </path>
-                                        <path
-                                                d="M10.667 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8.333 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0">
-                                        </path>
-                                    </svg></span></a>
-                                <span class="right-nav-link-tooltip">
-                                    Carts
-                                </span>
+                        </span>
+                        <span class="right-nav-link-container pos-relative">
+                            <a href="" class="right-nav-link no-margin pos-relative"><span
+                                class="right-nav-icons etsy-icon"><svg
+                                class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.307l2.4-12zM7.82 15l-1.6-8h14.227l-1.6 8z">
+                                    </path>
+                                    <path
+                                            d="M10.667 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8.333 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0">
+                                    </path>
+                                </svg></span></a>
+                            <span class="right-nav-link-tooltip">
+                                Carts
                             </span>
-                        </div>
+                        </span>
                     </div>
                 </div>
-                <div class="bottom-nav">
-                    <ul class="nav-list-container">
-                        <li class="nav-list">
-                            <a href="" class="gifts-link bottom-nav-links">
-                                <span class="gifts-link-icon">
-                                    <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                        focusable="false">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
-                                        </path>
-                                    </svg>
-                                    <span style="padding-left: 5px;">Gifts</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-list">
-                            <a href="" class="bottom-nav-links">
-                                Cyber deals
-                            </a>
-                        </li>
-                        <li class="nav-list">
-                            <a href="" class="bottom-nav-links">
-                                Home Favorites
-                            </a>
-                        </li>
-                        <li class="nav-list">
-                            <a href="" class="bottom-nav-links">
-                                Fashion Finds
-                            </a>
-                        </li>
-                        <li class="nav-list">
-                            <a href="" class="bottom-nav-links">
-                                Registry
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            </div>
+            <div class="bottom-nav">
+                <ul class="nav-list-container full-hw">
+                    <li class="nav-list">
+                        <a href="" class="gifts-link bottom-nav-links">
+                            <span class="gifts-link-icon">
+                                <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
+                                    </path>
+                                </svg>
+                                <span style="padding-left: 5px;">Gifts</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="" class="bottom-nav-links">
+                            Cyber deals
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="" class="bottom-nav-links">
+                            Home Favorites
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="" class="bottom-nav-links">
+                            Fashion Finds
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="" class="bottom-nav-links">
+                            Registry
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="hero-section">
+        <section class="hero-section">
             <div class="max-width-class shop-hero-container">
                 <section class="shop-hero">
                     <div class="hero-content-container">
-                        <div class="hero-content">
+                        <div class="hero-content full-width">
 
                             <a href="." class="shadow-container">
-                                <div class="hero-content-text">
-                                    <p class="hero-title">Cyber SAVINGS</p>
-                                    <p class="hero-discount-text">Upto 60% off original gifts and decor </p>
-                                    <p>Participating shops only. Terms apply.</p>
+                                <div class="hero-content-text no-margin">
+                                    <p class="hero-title no-margin">Cyber SAVINGS</p>
+                                    <p class="hero-discount-text no-margin">Upto 60% off original gifts and decor </p>
+                                    <p class="no-margin">Participating shops only. Terms apply.</p>
                                 </div>
-                                <img class="hero-first-img" src="Resources/Homepage/socks.jpg" alt="">
-                                <div class="hero-shop-now-b">
+                                <img class="hero-first-img full-width" src="Resources/Homepage/socks.jpg" alt="">
+                                <div class="hero-shop-now-b no-margin">
                                         Shop NOW
                                 </div>
                                 <div class="subtle-shadow-all-side"> </div>
@@ -200,11 +199,11 @@
 
                     <div class="hero-gid-container">
                         <div class="hero-grid">
-                            <div class="hero-grid-first-images pos-relative gradient-background">
+                            <div class="hero-grid-first-images pos-relative gradient-background full-hw">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-first-images" src="Resources/Homepage/neckless-gift.jpg" alt="Decor">
+                                    <img class="hero-grid-first-images full-hw" src="Resources/Homepage/neckless-gift.jpg" alt="Decor">
                                     <div class="hero-first-text">
-                                        <p>Gifts for Her up to 60% off</p>
+                                        <p class="no-margin">Gifts for Her up to 60% off</p>
                                         <span>Shop Now</span>
                                     </div>
                                     <div class="subtle-shadow-up"></div>
@@ -213,7 +212,7 @@
                             </div>
                             <div class="pos-relative">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-images" src="Resources/Homepage/kids.jpg" alt="kids">
+                                    <img class="hero-grid-images full-hw" src="Resources/Homepage/kids.jpg" alt="kids">
                                     <div class="price">
                                         <span class="price-span">
                                             <span class="price-pad">USD 39.00 <span class="strike-trough">USD
@@ -240,7 +239,7 @@
                             </div>
                             <div class="pos-relative">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-images" src="Resources/Homepage/happy.jpg" alt="kids">
+                                    <img class="hero-grid-images full-hw" src="Resources/Homepage/happy.jpg" alt="kids">
                                     <div class="price">
                                         <span class="price-span">
                                             <span class="price-pad">USD 78.00 <span class="strike-trough">USD
@@ -267,12 +266,12 @@
                             </div>
                         </div>
                         <div class="hero-grid hero-grid-second">
-                            <div class="hero-grid-first-images pos-relative gradient-background">
+                            <div class="hero-grid-first-images pos-relative gradient-background full-hw">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-first-images" src="Resources/Homepage/clothes.jpg"
+                                    <img class="hero-grid-first-images full-hw" src="Resources/Homepage/clothes.jpg"
                                         alt="Decor">
                                     <div class="hero-first-text">
-                                        <p>Gifts for Her up to 60% off</p>
+                                        <p class="no-margin">Gifts for Her up to 60% off</p>
                                         <span>Shop Now</span>
                                     </div>
                                     <div class="subtle-shadow-up"></div>
@@ -281,7 +280,7 @@
                             </div>
                             <div class="pos-relative">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-images" src="Resources/Homepage/ring.jpg" alt="kids">
+                                    <img class="hero-grid-images full-hw" src="Resources/Homepage/ring.jpg" alt="kids">
                                     <div class="price">
                                         <span class="price-span">
                                             <span class="price-pad">USD 24.00 <span class="strike-trough">USD
@@ -309,7 +308,7 @@
                             </div>
                             <div class="pos-relative">
                                 <a href="" class="shadow-container">
-                                    <img class="hero-grid-images" src="Resources/Homepage/neckless.jpg" alt="kids">
+                                    <img class="hero-grid-images full-hw" src="Resources/Homepage/neckless.jpg" alt="kids">
                                     <div class="price">
                                         <span class="price-span">
                                             <span class="price-pad">USD 45.00 <span class="strike-trough">USD
@@ -339,73 +338,71 @@
                     </div>
                 </section>
             </div>
-        </div>
+        </section>
         <div class="default-gap">
 
         </div>
-        <div class="featured-section">
+        <section class="featured-section">
             <div class="max-width-class featured-section-max-width">
-                <h4>Featured categories</h4>
+                <h4 class="no-margin">Featured categories</h4>
                 <div class="featured-items-container">
-                    <ul class="featured-items-list">
+                    <ul class="featured-items-list full-width">
                         <li>
-                            <!--                            <div class="updated-category-module__listing wt-rounded-02">-->
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/wall-decor.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/wall-decor.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Wall decor
                                 </p>
                             </a>
-                            <!--                            </div>-->
                         </li>
                         <li>
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/dog-pic.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/dog-pic.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Digital Prints
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/christmas-tree.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/christmas-tree.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Christmas ornaments
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/star-walls.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/star-walls.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Hand Crafts
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/signs.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/signs.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Signs
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="" class="featured-item-links">
-                                <div class="featured-item-img">
-                                    <img alt="" src="Resources/Homepage/digital-prints.jpg" class="">
+                                <div class="featured-item-img full-hw">
+                                    <img alt="" src="Resources/Homepage/digital-prints.jpg" class="full-hw">
                                 </div>
-                                <p class="featured-items-titles" title="">
+                                <p class="no-margin" title="">
                                     Digital Prints
                                 </p>
                             </a>
@@ -413,9 +410,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="discover-popular-container">
+        <section class="discover-popular-container">
             <div class="discover-popular max-width-class">
                 <div class="discover-popular-text-container">
                     <h2 class="discover-popular-text primary-editors-text">
@@ -423,7 +420,7 @@
                     </h2>
                 </div>
                 <div class="discover-popular-content-c">
-                    <ul class="discover-popular-content">
+                    <ul class="discover-popular-content full-width">
                         <li>
                             <div class="popular-links-c">
                                 <div class="deals-card-shadow"></div>
@@ -517,13 +514,13 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="default-gap"> </div>
 
 
 
-        <div class="editors-pics-section">
+        <section class="editors-pics-section">
             <div class="max-width-class editors-choice-max-width">
                 <div class="editors-choice-content">
                     <div class="editors-text">
@@ -605,7 +602,7 @@
                         <div class="ep-image-inner">
                             <div class="img-container">
                                 <img src="Resources/Homepage/Editors/candy-cane-placeholder.jpg" alt="">
-                                <video muted autoplay loop class="ep-video-hidden"
+                                <video muted autoplay loop class="ep-video-hidden position-absolute full-hw"
                                     src="Resources/Homepage/Editors/candy-cane-video.mp4"></video>
                             </div>
 
@@ -634,7 +631,7 @@
                                     </span>
                                 </span>
                             </div>
-                            <div class="video-play-button" aria-hidden="false">
+                            <div class="video-play-button position-absolute" aria-hidden="false">
                                 <span class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         aria-hidden="true" focusable="false">
                                         <polygon points="4 4 4 20 20 12 4 4"></polygon>
@@ -646,7 +643,7 @@
                         <div class="ep-image-inner">
                             <div class="img-container">
                                 <img src="Resources/Homepage/Editors/dog-placeholder.jpg" alt="">
-                                <video muted autoplay loop class="ep-video-hidden"
+                                <video muted autoplay loop class="ep-video-hidden position-absolute full-hw"
                                     src="Resources/Homepage/Editors/Dog-video.mp4"></video>
                             </div>
                             <div class="position-absolute hover-fav">
@@ -674,7 +671,7 @@
                                     </span>
                                 </span>
                             </div>
-                            <div class="video-play-button" aria-hidden="false">
+                            <div class="video-play-button position-absolute" aria-hidden="false">
                                 <span class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         aria-hidden="true" focusable="false">
                                         <polygon points="4 4 4 20 20 12 4 4"></polygon>
@@ -716,7 +713,7 @@
                         <div class="ep-image-inner">
                             <div class="img-container">
                                 <img src="Resources/Homepage/Editors/card-box-placeholder.jpg" alt="">
-                                <video muted autoplay loop class="ep-video-hidden"
+                                <video muted autoplay loop class="ep-video-hidden position-absolute full-hw"
                                     src="Resources/Homepage/Editors/card-box-video.mp4"></video>
                             </div>
                             <div class="position-absolute hover-fav">
@@ -744,7 +741,7 @@
                                     </span>
                                 </span>
                             </div>
-                            <div class="video-play-button" aria-hidden="false">
+                            <div class="video-play-button position-absolute" aria-hidden="false">
                                 <span class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         aria-hidden="true" focusable="false">
                                         <polygon points="4 4 4 20 20 12 4 4"></polygon>
@@ -755,12 +752,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="default-gap"></div>
 
-        <div class="deals-section">
-            <section class="max-width-class deals-container">
+        <section class="deals-section">
+            <div class="max-width-class deals-container">
                 <div class="deals-title-and-buttons">
                     <h2 class="discover-popular-text primary-editors-text">
                         Amazing deals, updated daily
@@ -775,8 +772,7 @@
                                 </svg></span>
 
                         </button>
-                        <button onclick="scrollLEft()" class="wt-btn right-scroll-arrow" data-daily-deals-next="1"
-                            aria-label="Next section" aria-describedby="daily-deals-twsh555y4qc">
+                        <button onclick="scrollLEft()" class="wt-btn right-scroll-arrow">
                             <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     aria-hidden="true" focusable="false">
                                     <path
@@ -1365,8 +1361,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <div class="default-gap"></div>
 
@@ -1788,8 +1784,7 @@
 
     <footer>
         <div class="whole-footer">
-
-            <div class="max-width-classddd justify-center">
+            <div class="justify-center">
                 <div class="max-width-class">
                     <div class="email-list">
                         <form action="">
@@ -1837,8 +1832,8 @@
                     </span>
                 </button>
                 <div class="question-explanation">
-                    Etsy’s 100% renewable electricity commitment includes the electricity used by the data centers that
-                    host Etsy.com, the Sell on Etsy app, and the Etsy app, as well as the electricity that powers Etsy’s
+                    Etsy's 100% renewable electricity commitment includes the electricity used by the data centers that
+                    host Etsy.com, the Sell on Etsy app, and the Etsy app, as well as the electricity that powers Etsy's
                     global offices and employees working remotely from home in the US.
                     <span class="popover_arrow" style="position: absolute; left: 115px;"></span>
                 </div>
@@ -1857,7 +1852,7 @@
                         <a href="https://etsy.app.link/d7nDUdp49V" class="download-app-button">Download the Etsy App</a>
                     </div>
                     <div class="footer-links">
-                        <div class="footer-links-inside">
+                        <div class="footer-links-inside full-width">
                             <div class="links">
                                 <h3>Shop</h3>
                                 <div class="links-group">
@@ -1905,7 +1900,7 @@
                                         <li>Privacy Settings</li>
                                     </ul>
                                     <div class="footer-social-media-container">
-                                        <ul class="footer-social-media">
+                                        <ul class="footer-social-media full-width">
                                             <li><a href="">
                                                     <span class="footer-nav-icon"><svg class="footer-nav-icons"
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
