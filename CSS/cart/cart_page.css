@@ -1,0 +1,215 @@
+/* Cart container */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+/* Cart items section */
+.cart-items {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual cart item */
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.shop-info {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.discount-code {
+    font-size: 14px;
+    color: #555;
+}
+
+.coupon-code {
+    color: #f16521;
+    font-weight: bold;
+}
+
+/* Item content layout */
+.item-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.size,
+.availability {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.availability {
+    color: red;
+}
+
+/* Quantity and actions */
+.quantity {
+    margin-bottom: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.actions button {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.actions button:hover {
+    background-color: #f16521;
+    color: white;
+    border-color: #f16521;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Checkout button per shop */
+.shop-checkout button {
+   text-align: right;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    
+}
+.shop-checkout button span{
+   cursor: pointer;
+}
+
+.shop-checkout button span:hover {
+    background-color: #f4eded;
+}
+
+/* Cart summary */
+.cart-summary {
+    width: 25%;
+    padding: 20px;
+    
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.cart-summary h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.payment-methods label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top:10px;
+   
+}
+
+.payment-methods img {
+    height:30px;
+    width:25px;
+   vertical-align: middle;
+   border: solid .5px gray;
+   border-radius: 5px;
+   padding:0px 15px;
+   margin: 0px;
+
+}
+
+.subtotal {
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#summary_prices{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: medium;
+}
+
+.options {
+    margin: 15px 0;
+}
+
+.checkout-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #333;
+}
+
+.apply-coupon {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.apply-coupon a {
+    text-decoration: none;
+    color: #f16521;
+    font-weight: bold;
+}
+.shop-checkout .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Space between text and arrow */
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect */
+.shop-checkout:hover .arrow {
+    transform: translateX(5px); 
+}
+
+
+
+
+
