@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.header{
+    background-color: #f0d7c7;
+}
+h1 {
+    font-size: 75px;
+    margin: 20px 0;
+    font-weight: 100;
+}
+h2{
+    font-weight: 100;
+    font-size: 50px;
+
+}
+h3{
+    font-weight: 100;
+    font-size: 25px;
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space elements apart */
+    align-items: center; /* Center items vertically */
+    height: 100px; /* Optional: Adjust height */
+    padding: 0 20px; /* Optional: Add horizontal padding */
+  }
+  
+  .filter {
+    margin-right: auto; /* Push it to the left */
+  }
+  
+  .show-more {
+    margin-left: auto; /* Push it to the center (effectively) */
+  }
+  
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px auto 30px;
+}
+
+/* Grid Container for 2 Rows, 6 Columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center grid */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid container */
+}
+
+/* Figure Styles */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img.circle {
+    width: 100%;
+    border-radius: 50%; /* Circular images */
+}
+
+
+
+figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Holiday Section */
+.holiday-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.holiday-card {
+    width: 260px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.holiday-card img {
+    width: 100%;
+    height: auto;
+}
+
+.holiday-card h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.holiday-card p {
+    font-size: 16px;
+    margin: 0 10px 10px;
+    color: #555;
+}
+
+.price {
+    color: darkgreen;
+}
+
+.ratings {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 10px;
+}
+
+
+#arrow {
+    display: inline-block; /* Make the arrow behave like a block element */
+    font-size: 2rem; /* Adjust size of the arrow */
+    transition: transform 0.3s ease; /* Smooth transition when moving */
+  }
+  
+  #arrow:hover {
+    transform: translateX(20px); /* Move the arrow 20px to the right when hovered */
+  }
+
+  
+
+
+
+/* Discover More container */
+.discover-more {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Two equal columns for all cards */
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Card styling */
+.card {
+display: flex; /* Flex layout for image and content */
+align-items: center;
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: left;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.card img {
+width: 150px; /* Fixed width for all images */
+height: 150px; /* Fixed height for all images */
+object-fit: cover; /* Crop and center images */
+border-radius: 8px 0 0 8px; /* Rounded corners for images */
+}
+
+/* Card content */
+.card-content {
+padding: 15px;
+flex: 1; /* Ensure content takes up remaining space */
+}
+
+.card-content h3 {
+font-size: 1.2rem;
+margin: 0 0 10px;
+color: #333;
+}
+
+.card-content a {
+text-decoration: none;
+color: #0073e6;
+font-weight: bold;
+transition: color 0.2s ease;
+}
+
+.card-content a:hover {
+color: #005bb5;
+}
+
+/* Large card styling (Etsy Gift Cards) */
+.card.large {
+flex-direction: column;
+text-align: center;
+grid-column: span 2; /* Spans full width in grid */
+}
+
+.card.large .card-content {
+padding: 20px;
+}
+
+.card.large img {
+width: 100%;
+max-width: 500px;
+height: auto;
+margin: 0 auto;
+}

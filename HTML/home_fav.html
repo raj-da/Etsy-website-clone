@@ -3,65 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/home_fav/home_fav.css">
     <title>Home Favorites</title>
     
 </head>
 <body>
     <!-- Header Section -->
-    <h1>Home Favorites</h1>
-    <h3>The best collection of statement pieces, essential items, and decor for every room and occasion.</h3>
-
+    <div class="header">
+        <!-- Header Section -->
+        <h1>Home Favorites</h1>
+        <h3>The best collection of statement pieces, essential items, and decor for every room and occasion.</h3>
+    </div>
     <!-- Grid Section -->
     <div class="grid-container">
         <!-- Row 1 -->
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Trending.webp" alt="Trending: Printables" title="Trending: Printables">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Trending.webp" alt="Trending: Printables" title="Trending: Printables">
             <a href=""><figcaption>Trending: Printables →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Home Decor.webp" alt="Home Decor" title="Home Decor">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Home Decor.webp" alt="Home Decor" title="Home Decor">
             <a href=""><figcaption>Home Decor →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Wall art.webp" alt="Wall Art" title="Wall Art">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Wall art.webp" alt="Wall Art" title="Wall Art">
             <a href=""><figcaption>Wall Art →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Kitchen & dining.avif" alt="Kitchen & Dining" title="Kitchen & Dining">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Kitchen & dining.avif" alt="Kitchen & Dining" title="Kitchen & Dining">
             <a href=""><figcaption>Kitchen & Dining →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Furniture.webp" alt="Furniture" title="Furniture">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Furniture.webp" alt="Furniture" title="Furniture">
             <a href=""><figcaption>Furniture →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Area rugs.webp" alt="Area Rugs" title="Area Rugs">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Area rugs.webp" alt="Area Rugs" title="Area Rugs">
             <a href=""><figcaption>Area Rugs →</figcaption></a>
         </figure>
 
         <!-- Row 2 -->
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Lighting.webp" alt="Lighting" title="Lighting">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Lighting.webp" alt="Lighting" title="Lighting">
             <a href=""><figcaption>Lighting →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Bedding.webp" alt="Bedding" title="Bedding">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Bedding.webp" alt="Bedding" title="Bedding">
             <a href=""><figcaption>Bedding →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Storage.webp" alt="Storage & Organization" title="Storage & Organization">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Storage.webp" alt="Storage & Organization" title="Storage & Organization">
             <a href=""><figcaption>Storage & Organization →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Home improvement.webp" alt="Home Improvement" title="Home Improvement">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Home improvement.webp" alt="Home Improvement" title="Home Improvement">
             <a href=""><figcaption>Home Improvement →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Bathroom.webp" alt="Bathroom" title="Bathroom">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Bathroom.webp" alt="Bathroom" title="Bathroom">
             <a href=""><figcaption>Bathroom →</figcaption></a>
         </figure>
         <figure>
-            <img src="../Resources/home fav/Home Favorites/Affordable finds.webp" alt="Affordable Finds" title="Affordable Finds">
+            <img class="circle" src="../Resources/home fav/Home Favorites/Affordable finds.webp" alt="Affordable Finds" title="Affordable Finds">
             <a href=""><figcaption>Affordable Finds →</figcaption></a>
         </figure>
 
@@ -71,10 +74,13 @@
 
     <!-- Holiday Section -->
     <h2>Holiday hosting & decor</h2>
-    <button>
-        <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
-        Filters
-    </button>
+
+    <div class="container">
+        <button class="button filter">
+            <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
+            Filters
+        </button></div>
+
     <div class="holiday-section">
         <div class="holiday-card">
             <p>Etsy's Pick</p>
@@ -212,15 +218,20 @@
             <a href=""><p>More like this →</p></a>
 
         </div>
-        <button>Show more</button>
 
+        <div class="container">
+            <button class="button show-more">Show More</button>
+          </div>
         
     </div>
     <h2>Custom home gifts</h2>
-    <button>
-        <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
-        Filters
-    </button>
+
+    <div class="container">
+        <button  class="button filter">
+            <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
+            Filters
+        </button></div>
+
     <div class="holiday-section">
         <div class="holiday-card">
             <p>Etsy's Pick</p>
@@ -355,15 +366,21 @@
             <a href=""><p>More like this →</p></a>
 
         </div>
-        <button>Show more</button>
-
+        <div class="container">
+            <button class="button show-more">Show More</button>
+          </div>
         
     </div>
     <h2>Vintage finds</h2>
-    <button>
-        <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
-        Filters
-    </button>
+
+
+    <div class="container">
+        <button class="button filter">
+            <img src="../Resources/home fav/Filter Icon.jpg" alt="Filter Icon" width="20" height="20">
+            Filters
+        </button></div>
+
+
     <div class="holiday-section">
         <div class="holiday-card">
             <p>Etsy's Pick</p>
@@ -499,8 +516,11 @@
             <a href=""><p>More like this →</p></a>
 
         </div>
-        <button>Show more</button>
-
+        <div class="container">
+            <button class="button show-more">Show More</button>
+          </div>
+          
+        </div>
         </div>
 
 
