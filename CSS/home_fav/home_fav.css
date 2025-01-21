@@ -1,12 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.header{
+    background-color: #f0d7c7;
+}
+h1 {
+    font-size: 75px;
+    margin: 20px 0;
+    font-weight: 100;
+}
+h2{
+    font-weight: 100;
+    font-size: 50px;
+
+}
+h3{
+    font-weight: 100;
+    font-size: 25px;
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space elements apart */
+    align-items: center; /* Center items vertically */
+    height: 100px; /* Optional: Adjust height */
+    padding: 0 20px; /* Optional: Add horizontal padding */
+  }
+  
+  .filter {
+    margin-right: auto; /* Push it to the left */
+  }
+  
+  .show-more {
+    margin-left: auto; /* Push it to the center (effectively) */
+  }
+  
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px auto 30px;
+}
+
+/* Grid Container for 2 Rows, 6 Columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center grid */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid container */
+}
+
+/* Figure Styles */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img.circle {
+    width: 100%;
+    border-radius: 50%; /* Circular images */
+}
+
+
+
+figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Holiday Section */
+.holiday-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.holiday-card {
+    width: 260px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.holiday-card img {
+    width: 100%;
+    height: auto;
+}
+
+.holiday-card h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.holiday-card p {
+    font-size: 16px;
+    margin: 0 10px 10px;
+    color: #555;
+}
+
+.price {
+    color: darkgreen;
+}
+
+.ratings {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 10px;
+}
+
+
+#arrow {
+    display: inline-block; /* Make the arrow behave like a block element */
+    font-size: 2rem; /* Adjust size of the arrow */
+    transition: transform 0.3s ease; /* Smooth transition when moving */
+  }
+  
+  #arrow:hover {
+    transform: translateX(20px); /* Move the arrow 20px to the right when hovered */
+  }
+
+  
+
+
+
+/* Discover More container */
+.discover-more {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Two equal columns for all cards */
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Card styling */
+.card {
+display: flex; /* Flex layout for image and content */
+align-items: center;
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: left;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.card img {
+width: 150px; /* Fixed width for all images */
+height: 150px; /* Fixed height for all images */
+object-fit: cover; /* Crop and center images */
+border-radius: 8px 0 0 8px; /* Rounded corners for images */
+}
+
+/* Card content */
+.card-content {
+padding: 15px;
+flex: 1; /* Ensure content takes up remaining space */
+}
+
+.card-content h3 {
+font-size: 1.2rem;
+margin: 0 0 10px;
+color: #333;
+}
+
+.card-content a {
+text-decoration: none;
+color: #0073e6;
+font-weight: bold;
+transition: color 0.2s ease;
+}
+
+.card-content a:hover {
+color: #005bb5;
+}
+
+/* Large card styling (Etsy Gift Cards) */
+.card.large {
+flex-direction: column;
+text-align: center;
+grid-column: span 2; /* Spans full width in grid */
+}
+
+.card.large .card-content {
+padding: 20px;
+}
+
+.card.large img {
+width: 100%;
+max-width: 500px;
+height: auto;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 :root {
     --transition-scale: transform 0.1s ease, background-color 0.1s ease;
-    --graphic-font: 'Graphik Trial', -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: var(--graphic-font), serif;
+    font-family: "Graphik Trial",-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
@@ -77,43 +318,54 @@ a {
     width: 24px;
 }
 
+/*.right-nav-link {*/
+/*    display: flex;*/
+/*    height: 48px;*/
+/*    width: 48px;*/
+/*    align-items: center;*/
+/*    border-radius: 24px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    justify-content: center;*/
+/*}*/
+/*.right-nav-link:hover {*/
+/*    background-color: #ccebff;*/
+/*}*/
+
+.right-nav-link-container {
+    position: relative;
+}
 .right-nav-link {
+    position: relative; /* Position needed for pseudo-element */
     display: flex;
     height: 48px;
     width: 48px;
     align-items: center;
     border-radius: 24px;
+    margin: 0;
     padding: 0;
     justify-content: center;
-    overflow: hidden;
-    z-index: 1;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
 }
 
-.right-nav-link::before,
-.sign-in-btn:hover::before,
-.bottom-nav-links::before,
-.sign-in-btn::before,
-.categories-button::before,
-.popover_arrow::after,
-.last-left-container::before{
+.right-nav-link::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
-}
-.right-nav-link::before {
-    background-color: transparent;
+    background-color: transparent; /* Initial background color */
+    z-index: -1; /* Puts the background behind the content */
     transition: var(--transition-scale);
-    border-radius: 24px;
+    border-radius: 24px; /* Match the border radius */
     transform: scale(50%);
 }
 
 .right-nav-link:hover::before {
-    transform: scale(1.05);
-    background-color: #ccebff;
+    transform: scale(1.05); /* Scale the background pseudo-element */
+    background-color: #ccebff; /* Change background color */
 }
 
 
@@ -165,8 +417,22 @@ a {
     font-size: 14px;
     padding-left: 5px;
 }
+
+/*.categories-button {*/
+/*    background-color: white;*/
+/*    border: none;*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*    justify-content: space-between;*/
+/*    min-width: 100px;*/
+/*    padding: 9px 15px 9px 15px;*/
+/*    border-radius: 15px;*/
+/*    margin-right: 6px;*/
+/*    font-size: 14px;*/
+/*    font-family: "Graphik Trial", sans-serif;*/
+/*}*/
 .categories-button {
-    position: relative;
+    position: relative; /* Position needed for pseudo-element */
     background-color: white;
     border: none;
     display: flex;
@@ -177,15 +443,21 @@ a {
     border-radius: 15px;
     margin-right: 6px;
     font-size: 14px;
-    overflow: hidden;
-    z-index: 1;
+    font-family: "Graphik Trial", sans-serif;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
 }
+
 
 
 .categories-button:hover::before {
-    transform: scale(1);
-    background-color: #e9e9e9;
+    transform: scale(1); /* Scale the background pseudo-element */
+    background-color: #e9e9e9; /* Example hover background color */
 }
+
+/*.categories-button:hover {*/
+/*    background-color: #e9e9e9;*/
+/*}*/
 
 .top-nav {
     display: flex;
@@ -197,6 +469,7 @@ a {
 .search-input {
     margin: 0;
     width: 50%;
+    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
     font-size: 16px;
     border-radius: 24px 0 0 24px;
     padding: 9px 42px 9px 18px;
@@ -218,6 +491,7 @@ a {
 .search-input:focus-visible{
     border: 2px solid;
     border-right-width: 0;
+
 }
 
 .search-button-icon {
@@ -234,7 +508,7 @@ a {
     height: 100%;
 }
 
-.search-bar:hover .search-button-icon{
+.search-bar:hover .search-button-icon {
     height: 44px;
     padding: 0 11px 0 11px;
     display: flex;
@@ -268,14 +542,14 @@ a {
 }
 
 .sign-in-btn {
-    position: relative;
+    position: relative; /* Position needed for pseudo-element */
     background-color: white;
     border-radius: 20px;
     border: none;
     padding: 9px 15px;
-    overflow: hidden;
-    z-index: 1;
-    font-family: var(--graphic-font), serif;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
+    font-family: 'Graphik Trial', "Graphik Trial", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1;
@@ -284,9 +558,8 @@ a {
 
 
 .sign-in-btn:hover::before {
-    z-index: -1;
-    transform: scale(1.05);
-    background-color: #e9e9e9;
+    transform: scale(1.05); /* Scale the background pseudo-element */
+    background-color: #e9e9e9; /* Change background color */
 }
 
 .etsy-icon{
@@ -326,9 +599,11 @@ a {
 
 .nav-list-container {
     display: flex;
-    font-family: var(--graphic-font), serif;
+    width: 100%;
+    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
     font-size: 13px;
     font-weight: 500;
+    height: 100%;
     align-items: center;
     justify-content: center;
     padding-top: 4px;
@@ -336,6 +611,15 @@ a {
     margin: 0;
 }
 
+/*.bottom-nav-links {*/
+/*    padding: 9px 15px;*/
+/*    border: none;*/
+/*    border-radius: 30px;*/
+/*    height: 15px;*/
+/*}*/
+/*.bottom-nav-links:hover {*/
+/*    background-color: #e9e9e9;*/
+/*}*/
 .bottom-nav-links {
     position: relative;
     padding: 9px 15px;
@@ -346,11 +630,15 @@ a {
     z-index: 1;
     font-weight: 400;
 }
-
-.bottom-nav-links::before,
-.sign-in-btn::before,
-.categories-button::before{
+.bottom-nav-links::before, .sign-in-btn::before, .categories-button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: transparent;
+    z-index: -1;
     transition: var(--transition-scale);
     border-radius: 30px;
     transform: scale(50%);
@@ -384,6 +672,7 @@ a {
 }
 .footer1 .read-our-story{
     text-decoration: underline;
+    font-family: "Graphik Trial", sans-serif;
     justify-content: space-around;
 }
 
@@ -416,6 +705,7 @@ a {
 
 .what-is-etsy-divs-middle {
     margin:  0 36px;
+    
 }
 .what-is-etsy-divs h3{
     font-size: 27px;
@@ -435,6 +725,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     letter-spacing: .16px;
+    font-family: 'Graphik Trial', sans-serif;
 }
 .what-is-etsy-container{
     font-weight: 300;
@@ -492,13 +783,14 @@ footer {
 }
 
 .email-list form{
-    /*height: 98px;*/
+    height: 98px;
     margin: 0;
 }
 
 .email-list p{
     text-align: center;
     font-size: 1rem;
+    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 0;
 }
 
@@ -509,13 +801,13 @@ footer {
 
 #email-list-email, .email-submit { 
     border: 1px solid lightgray;
+    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
 }
 
 #email-list-email {
     height: 3rem;
-    max-width: 300px;
-    flex: 1;
+    width: 25rem;
     padding-left: 20px;
     border-right-width: 0;
     border-radius: 24px 0 0 24px;
@@ -526,12 +818,13 @@ footer {
     padding: 12px 21px 12px 15px;
     background-color: #fff;
     font-weight: 400;
-    transition: background-color 0.5s, font-weight 0.5s;
+    transition: background-color 0.5s;
 }
 
 .email-submit:hover, .email-list-input:focus-within .email-submit{
     background-color: #000;
     color: white;
+    font-weight: 500;
 }
 .footer-renewable {
     display: flex;
@@ -556,7 +849,7 @@ footer {
     padding-left: 15px;
 }
 .what-is-etsy-divs .question-explanation {
-    transform: translate(-30px, -250px);
+    transform: translate(-50px, -280px);
 }
 
 .question-explanation {
@@ -584,20 +877,25 @@ footer {
     width: 12px;
 }
 .popover_arrow::after {
+    content: "";
     background-color:  #fff;
     border: 0 solid  #949494;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     transform: rotate(45deg);
 }
 
-.renewable-button:hover ~ .question-explanation,
-.question-explanation:hover,
+.renewable-button:hover ~ .question-explanation, .question-explanation:hover,
 .question-container:hover .question-explanation{
     visibility: visible;
     transform: translate(0px, -180px);
     opacity: 1;
 }
 .question-container:hover .question-explanation {
-    transform: translate(-30px, -280px);
+    transform: translate(-50px, -300px);
 }
 .renewable-icon {
     height: 36px;
@@ -675,6 +973,7 @@ footer {
     padding: 0 6px 0 0;
     line-height: 1.4;
     font-size: 13px;
+
 }
 .footer-links {
     display: flex;
@@ -684,6 +983,7 @@ footer {
 }
 .footer-links-inside {
     display: flex;
+    width: 100%;
 }
 .links h3 {
     margin-top: 0;
@@ -700,6 +1000,7 @@ footer {
     margin-top: 20px;
 }
 .footer-social-media {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -715,6 +1016,7 @@ footer {
     height: 24px;
     padding: 6px;
     transition: background-color 0.2s;
+    /* transition: ; */
     transform-origin: center;
     border-radius: 100%;
     background-size: 80%;
@@ -764,21 +1066,28 @@ footer {
     padding: 0 12px;
     font-weight: 500;
     border-radius: 24px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    position: relative; /* Required for positioning the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element is contained */
+    z-index: 1; /* Ensuring content is layered above the pseudo-element */
     transition: background-color .2s;
 }
 
 .last-left-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures it stays behind the content */
     transition: transform 0.2s ease, background-color 0.2s ease;
     border-radius: 24px;
     transform: scale(10%);
 }
 
 .last-left-container:hover::before {
-    transform: scale(1.1);
-    background-color: #3f3f3f;
+    transform: scale(1.1); /* Scale the pseudo-element on hover */
+    background-color: #3f3f3f; /* Color for the pseudo-element */
 }
 
 .region-div a{ 
@@ -820,8 +1129,6 @@ footer {
 .holiday-hub-c {
     display: contents;
 }
-
-
 @media (max-width: 900px) {
     .hidden-categories-button {
         display: inline-block;
@@ -833,7 +1140,7 @@ footer {
         display: none;
     }
     .etsy-logo {
-        padding-right: 120px;
+        padding-right: 200px;
     }
     
     .top-nav {
@@ -887,23 +1194,8 @@ footer {
         font-size: 13px;
     }
 }
-@media (max-width: 600px) {
-    .hero-gid-container{
-        display: none !important;
-    }
-    .hero-content-container {
-        flex-basis: 100% !important;
-        padding: 0 !important;
-    }
-    .editors-pics-section-small {
-        display: none;
-    }
-}
 
 @media (max-width: 400px){
-    html {
-        min-width: 400px;
-    }
     .hero-gid-container{
         display: none !important;
     }
@@ -922,15 +1214,18 @@ footer {
     .hidden-categories-button {
         margin-left: -12px;
     }
-    #email-list-email {
+    .email-list-email {
         width: 10rem;
     }
     .search-input{
         min-width: auto;
     }
-
+    .hero-content-container {
+        flex-basis: 100% !important;
+        padding: 0 !important;
+    }
     .max-width-class{
-        padding: 0;
+        padding: 0 ;
     }
     .shop-hero-container{
         padding: 10px !important;
