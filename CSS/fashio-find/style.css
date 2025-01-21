@@ -324,3 +324,61 @@ html, body {
     font-weight: 700; 
     margin: 5px 0 0 0; 
 }
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+   
+    .container, .container2, .container3 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .floatt {
+        flex-direction: column;
+        height: auto;
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .floatt img {
+        width: 100%;
+        height: auto;
+    }
+
+    .discover, .discover2 {
+        flex-direction: column; 
+        width: 100%;
+        height: auto;
+    }
+
+    .dot {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card {
+        width: 100%; /* Full width on smaller devices */
+        height: auto;
+    }
+}
+
+/* Additional media queries for even smaller screens */
+@media screen and (max-width: 480px) {
+    .first {
+        height: auto;
+    }
+
+    .first > h1, .first > h3 {
+        font-size: 18px; /* Adjust font sizes */
+    }
+
+    .filter-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
