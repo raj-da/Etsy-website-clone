@@ -220,3 +220,1074 @@ max-width: 500px;
 height: auto;
 margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --transition-scale: transform 0.1s ease, background-color 0.1s ease;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Graphik Trial",-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    border-bottom: 2px solid rgba(14, 14, 14, 0.18);
+    margin-bottom: 0;
+}
+.display-inline {
+    display: inline;
+}
+.max-width-class {
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.justify-center {
+    display: flex;
+    justify-content: space-around;
+}
+.whole-footer {
+    background-color: rgb(204, 235, 255);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etsy-logo {
+    width: 80px;
+    height: 40px;
+    padding-right: 6px;
+}
+
+.nav-left-part {
+    display: flex;
+    align-items: center;
+}
+
+.nav-middle-part {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 12px;
+    flex: 1;
+}
+
+.nav-right-part {
+    display: flex;
+    align-items: center;
+}
+
+.Hamburger-menu {
+    width: 18px;
+    height: 18px;
+}
+
+.right-nav-icons {
+    height: 24px;
+    width: 24px;
+}
+
+/*.right-nav-link {*/
+/*    display: flex;*/
+/*    height: 48px;*/
+/*    width: 48px;*/
+/*    align-items: center;*/
+/*    border-radius: 24px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    justify-content: center;*/
+/*}*/
+/*.right-nav-link:hover {*/
+/*    background-color: #ccebff;*/
+/*}*/
+
+.right-nav-link-container {
+    position: relative;
+}
+.right-nav-link {
+    position: relative; /* Position needed for pseudo-element */
+    display: flex;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    border-radius: 24px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
+}
+
+.right-nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent; /* Initial background color */
+    z-index: -1; /* Puts the background behind the content */
+    transition: var(--transition-scale);
+    border-radius: 24px; /* Match the border radius */
+    transform: scale(50%);
+}
+
+.right-nav-link:hover::before {
+    transform: scale(1.05); /* Scale the background pseudo-element */
+    background-color: #ccebff; /* Change background color */
+}
+
+
+.right-nav-link-tooltip{
+    position: absolute;
+    background-color: rgb(18, 40, 104);
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    transform: translate(-5%, 8%);
+    z-index: 10;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+#nav-fav-button-tooltip {
+    transform: translate(-20%, 8%);
+}
+
+.right-nav-link-container:hover .right-nav-link-tooltip{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-5%, 20%);
+}
+.right-nav-link-container:hover #nav-fav-button-tooltip{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-20%, 20%);
+}
+.right-nav-link-tooltip:after {
+    content: "";
+    background: inherit;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: -3px;
+    left: calc(50% - 4.5px);
+    transform: rotate(45deg);
+}
+
+.nav-bar {
+    height: 105px;
+}
+
+.categories-text {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+/*.categories-button {*/
+/*    background-color: white;*/
+/*    border: none;*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*    justify-content: space-between;*/
+/*    min-width: 100px;*/
+/*    padding: 9px 15px 9px 15px;*/
+/*    border-radius: 15px;*/
+/*    margin-right: 6px;*/
+/*    font-size: 14px;*/
+/*    font-family: "Graphik Trial", sans-serif;*/
+/*}*/
+.categories-button {
+    position: relative; /* Position needed for pseudo-element */
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-width: 100px;
+    padding: 9px 15px;
+    border-radius: 15px;
+    margin-right: 6px;
+    font-size: 14px;
+    font-family: "Graphik Trial", sans-serif;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
+}
+
+
+
+.categories-button:hover::before {
+    transform: scale(1); /* Scale the background pseudo-element */
+    background-color: #e9e9e9; /* Example hover background color */
+}
+
+/*.categories-button:hover {*/
+/*    background-color: #e9e9e9;*/
+/*}*/
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px 5px 36px;
+    flex: 1;
+}
+
+.search-input {
+    margin: 0;
+    width: 50%;
+    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-size: 16px;
+    border-radius: 24px 0 0 24px;
+    padding: 9px 42px 9px 18px;
+    min-width: 355px;
+    border: solid 2px;
+    border-right-width: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex: 1;
+    outline: 0;
+
+}
+
+.search-input:active {
+    border: none;
+    border-right-width: 0;
+
+}
+.search-input:focus-visible{
+    border: 2px solid;
+    border-right-width: 0;
+
+}
+
+.search-button-icon {
+    padding:0 7px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f1641e;
+    fill: white;
+    transition: all .1s;
+}
+.search-button-container {
+    height: 100%;
+}
+
+.search-bar:hover .search-button-icon {
+    height: 44px;
+    padding: 0 11px 0 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 24px 24px 0;
+    background-color: #f69a6c;
+    border: none;
+}
+.search-button {
+    height: 48px;
+    width: 48px;
+    border: solid 2px;
+    border-left-width: 0;
+    border-radius: 0 24px 24px 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon{
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    border-radius: 24px;
+    height: 48px;
+    flex: 1;
+}
+
+.sign-in-btn {
+    position: relative; /* Position needed for pseudo-element */
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 9px 15px;
+    overflow: hidden; /* Ensures no overflow from pseudo-element */
+    z-index: 1; /* To ensure content is above the pseudo-element */
+    font-family: 'Graphik Trial', "Graphik Trial", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+
+.sign-in-btn:hover::before {
+    transform: scale(1.05); /* Scale the background pseudo-element */
+    background-color: #e9e9e9; /* Change background color */
+}
+
+.etsy-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottom-nav {
+    display: flex;
+    height: 36px;
+    align-items: center;
+}
+
+
+
+
+.gifts-link{
+    display: block;
+    height: 20px;
+    font-size: 14px;
+}
+.gifts-link-icon{
+    height: 17px;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+}
+.gift-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-list {
+    list-style: none;
+    margin: 0 18px 0 0;
+}
+
+.nav-list-container {
+    display: flex;
+    width: 100%;
+    font-family: 'Graphik Trial',-apple-system,Helvetica Neue,Droid Sans,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+/*.bottom-nav-links {*/
+/*    padding: 9px 15px;*/
+/*    border: none;*/
+/*    border-radius: 30px;*/
+/*    height: 15px;*/
+/*}*/
+/*.bottom-nav-links:hover {*/
+/*    background-color: #e9e9e9;*/
+/*}*/
+.bottom-nav-links {
+    position: relative;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 30px;
+    height: 15px;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 400;
+}
+.bottom-nav-links::before, .sign-in-btn::before, .categories-button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: var(--transition-scale);
+    border-radius: 30px;
+    transform: scale(50%);
+}
+.categories-button::before {
+    transform: scale(70%);
+}
+
+.bottom-nav-links:hover::before {
+    transform: scale(1.05);
+    background-color: #e9e9e9;
+}
+
+
+
+
+
+
+.footer1-container {
+    background-color: #fffbd8;
+    padding-bottom: 36px;
+    height: auto;
+}
+
+.footer1{
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+    padding: 36px 54px !important;
+    text-align: center;
+}
+.footer1 .read-our-story{
+    text-decoration: underline;
+    font-family: "Graphik Trial", sans-serif;
+    justify-content: space-around;
+}
+
+.footer1 h1{
+    font-weight: 300;
+    font-family: "GuardianEgyp-Regular", serif;
+    font-size: 42px;
+    margin: 0;
+    line-height: 1.1;
+}
+.footer1-inside {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 42px;
+    padding-top: 36px;
+    font-size: 16px;
+}
+
+.what-is-etsy-divs{
+    text-align: left;
+    width: 405px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.question {
+    cursor: help;
+    text-decoration-style: dotted !important;
+}
+
+.what-is-etsy-divs-middle {
+    margin:  0 36px;
+    
+}
+.what-is-etsy-divs h3{
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 18px;
+}
+.what-is-etsy-divs p{
+    display: inline;
+}
+
+.what-is-etsy-container h4{
+    line-height: 1.4;
+    font-weight: 500;
+}
+.what-is-etsy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: .16px;
+    font-family: 'Graphik Trial', sans-serif;
+}
+.what-is-etsy-container{
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.footer1 h4{
+    font-size: 19px;
+    margin: 0;
+}
+
+.footer1-container span {
+    margin: 0;
+    box-sizing: inherit;
+    fill: #fff;
+    vertical-align: middle;
+}
+.go-to-help {
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 10;
+    background: 0 0;
+    border: solid 2px;
+    border-radius: 24px;
+    min-width: 48px;
+    min-height: 24px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+    margin-top: 12px;
+    color: #222;
+    outline: 0;
+    text-decoration: none;
+}
+
+.go-to-help:hover {
+    transform: scaleX(1.015) scaleY(1.035) perspective(1px);
+    box-shadow: 0 0 10px  rgba(53, 53, 53, 0.5);
+}
+
+
+
+
+footer {
+    background-color: #2638c0;
+}
+.email-list{
+    background-color: #ccebff;
+    padding: 36px 24px 18px;
+}
+
+.email-list form{
+    height: 98px;
+    margin: 0;
+}
+
+.email-list p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
+}
+
+.email-list-input {
+    display: flex;
+    justify-content: center;
+}
+
+#email-list-email, .email-submit { 
+    border: 1px solid lightgray;
+    font-family: "Graphik Trial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+#email-list-email {
+    height: 3rem;
+    width: 25rem;
+    padding-left: 20px;
+    border-right-width: 0;
+    border-radius: 24px 0 0 24px;
+}
+.email-submit {
+    border-radius:  0 24px 24px 0;
+    border-left-width: 0;
+    padding: 12px 21px 12px 15px;
+    background-color: #fff;
+    font-weight: 400;
+    transition: background-color 0.5s;
+}
+
+.email-submit:hover, .email-list-input:focus-within .email-submit{
+    background-color: #000;
+    color: white;
+    font-weight: 500;
+}
+.footer-renewable {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0;
+    background-color: #3b67d9;
+}
+.renewable-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    fill: white;
+    color: white;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.question-explanation ul{
+    margin: 0;
+    text-align: left;
+    padding-left: 15px;
+}
+.what-is-etsy-divs .question-explanation {
+    transform: translate(-50px, -280px);
+}
+
+.question-explanation {
+    position: absolute;
+    width: 18em;
+    text-align: center;
+    border-radius: 12px;
+    transform: translate(0px, -170px);
+    background-color: white;
+    padding: 12px;
+    visibility: hidden;
+    transition: opacity .3s cubic-bezier(.175,.745,.425,1.11), transform .3s cubic-bezier(.175,.745,.425,1.11),
+    visibility .3s cubic-bezier(.175,.745,.425,1.11);
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: all;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.3);
+}
+.popover_arrow{
+    top: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 115px;
+    height: 12px;
+    width: 12px;
+}
+.popover_arrow::after {
+    content: "";
+    background-color:  #fff;
+    border: 0 solid  #949494;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.renewable-button:hover ~ .question-explanation, .question-explanation:hover,
+.question-container:hover .question-explanation{
+    visibility: visible;
+    transform: translate(0px, -180px);
+    opacity: 1;
+}
+.question-container:hover .question-explanation {
+    transform: translate(-50px, -300px);
+}
+.renewable-icon {
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+}
+.renewable-text {
+    display: inline;
+    font-size: 16px;
+    cursor: help;
+}
+.footer-middle-container {
+    background-color: #2638c0;
+}
+.footer-middle-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 1400px;
+}
+
+.download-app{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 36px;
+    gap: 18px;
+    flex: 1;
+    background-color: #122868;
+}
+.footer-logo-link {
+    height: 72px;
+    width: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.etsy-icon-svg {
+    fill: white;
+    height: 24px;
+    width: 48px;
+    transform: scale(1.2);
+}
+.icon-span {
+    height: 60px;
+    width: 60px;
+    background-color: #f1641e;
+    padding: 6px 6px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-app-button{
+    border-radius: 24px;
+    padding: 12px 18px;
+    font-weight: 400;
+    background-color: #2638c0;
+    color: white;
+}
+.links{
+    padding-right: 18px;
+    flex-basis: 25%;
+    display: block;
+}
+.links-group-help {
+    padding-right: 0;
+}
+
+.links ul{
+    list-style: none;   
+    margin: 0;
+    padding: 0 6px 0 0;
+    line-height: 1.4;
+    font-size: 13px;
+
+}
+.footer-links {
+    display: flex;
+    padding: 36px 36px 24px 36px;
+    flex: 2;
+    color: white;
+}
+.footer-links-inside {
+    display: flex;
+    width: 100%;
+}
+.links h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.links li {
+    padding: 6px 0;
+    width: 100%;
+}
+
+
+.footer-social-media-container {
+    margin-top: 20px;
+}
+.footer-social-media {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-social-media li{
+    margin-right: 12px;
+    display: inline-block;
+    width: auto;
+}
+.footer-social-media a{
+    margin-left: -9px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    transition: background-color 0.2s;
+    /* transition: ; */
+    transform-origin: center;
+    border-radius: 100%;
+    background-size: 80%;
+}
+.footer-social-media a:hover{ 
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 100%;
+    background-size: 100%;
+}
+
+.footer-nav-icon {
+    display: block;
+}
+.footer-nav-icons {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-right: 10px;
+}
+.globe-icon-svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+.footer-last a{ 
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.footer-last-container {
+    background-color: #222;
+    padding: 18px 24px;
+}
+.footer-last {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.inner-last-footer {
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+}
+
+.last-left-container {
+    display: flex;
+    padding: 0 12px;
+    font-weight: 500;
+    border-radius: 24px;
+    position: relative; /* Required for positioning the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element is contained */
+    z-index: 1; /* Ensuring content is layered above the pseudo-element */
+    transition: background-color .2s;
+}
+
+.last-left-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures it stays behind the content */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-radius: 24px;
+    transform: scale(10%);
+}
+
+.last-left-container:hover::before {
+    transform: scale(1.1); /* Scale the pseudo-element on hover */
+    background-color: #3f3f3f; /* Color for the pseudo-element */
+}
+
+.region-div a{ 
+    padding: 9px 15px;
+    margin: 0 -15px;
+}
+.region-div{
+    display: flex;
+    align-items: center;
+}
+.last-link-list{
+    gap: 20px;
+    display: flex;
+}
+.last-right-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    justify-content: flex-end;
+
+}
+.last-right-container ul {
+    list-style: none;
+    margin: 0;
+}
+.last-right-container ul a {
+    text-decoration: underline;
+}
+
+.hidden-categories-button {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 12px;
+}
+.holiday-hub-c {
+    display: contents;
+}
+@media (max-width: 900px) {
+    .hidden-categories-button {
+        display: inline-block;
+    }
+    .max-width-class {
+        padding: 0 24px;
+    }
+    .categories-button{
+        display: none;
+    }
+    .etsy-logo {
+        padding-right: 200px;
+    }
+    
+    .top-nav {
+        padding: 2px 12px !important;
+        flex-wrap: wrap;
+    }
+    .bottom-nav {
+        display: none;
+    }
+    .nav-middle-part {
+        order: 2;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+    .nav-bar{
+        height: auto;
+    }
+    .footer1-inside {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .what-is-etsy-divs {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-middle-links {
+        flex-direction: column;
+    }
+    .download-app {
+        order: 1;
+        flex-direction: row;
+    }
+    .download-app-button {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+    .icon-span {
+        padding: 0;
+    }
+    .etsy-icon-svg {
+        transform: scale(1);
+    }
+    .footer-logo-link {
+        height: 60px;
+        width: 60px;
+    }
+    .inner-last-footer {
+        flex-direction: column;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-gid-container{
+        display: none !important;
+    }
+    .etsy-logo{
+        padding-right: 0;
+        height: 30px;
+        width: auto;
+    }
+    .nav-left-part{
+        flex-basis: 20%;
+    }
+    .nav-middle-part{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .hidden-categories-button {
+        margin-left: -12px;
+    }
+    .email-list-email {
+        width: 10rem;
+    }
+    .search-input{
+        min-width: auto;
+    }
+    .hero-content-container {
+        flex-basis: 100% !important;
+        padding: 0 !important;
+    }
+    .max-width-class{
+        padding: 0 ;
+    }
+    .shop-hero-container{
+        padding: 10px !important;
+        margin-top: 10px !important;
+    }
+    .featured-section-max-width{
+        padding: 10px !important;
+    }
+    .featured-items-list li {
+        flex-basis: 44% !important;
+    }
+
+    .editors-choice-small-container {
+        flex-direction: column;
+    }
+    .editors-choice-content-small {
+        flex-direction: row;
+    }
+    .holiday-hub-c {
+        display: block;
+        flex-basis: 50%;
+    }
+    .editors-choice-image-container {
+        max-width: 100% !important;
+    }
+    .editors-text {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .editors-choice-max-width {
+        padding: 0 5px !important;
+    }
+    .ep-image-inner-small-b {
+        padding: 0 18px 12px 0 !important;
+    }
+    .ep-image-inner-small-b .price, .ep-image-inner-small .price, .editors-small-right .price{
+        display: none;
+    }
+    .editors-choice-content .editors-text {
+        padding-left: 10px;
+    }
+    .editors-description {
+        display: none !important;
+    }
+    .shop-unique-button{
+        display: none;
+    }
+    .email-list form{
+        height: auto;
+    }
+    .last-right-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inner-last-footer {
+        padding: 0;
+    }
+    .last-link-list {
+        padding: 0;
+        flex-wrap :wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
