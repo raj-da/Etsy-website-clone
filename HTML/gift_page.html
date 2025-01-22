@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="icon" href="../Resources/favicon-32x32.png">
-    <link rel="stylesheet" href="../CSS/Header_and_footer.css">
     <link rel="stylesheet" href="../CSS/gift_page/gift_pagemain.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +13,13 @@
         rel="stylesheet" type="text/css" /> <!--font-family: "GuardianEgyp-Thin";-->
     <link href="https://fonts.cdnfonts.com/css/graphik-trial" rel="stylesheet">
     <!--font-family: 'Graphik Trial', sans-serif;-->
+    <link rel="stylesheet" href="../CSS/Header_and_footer.css">
     <title>Etsy</title>
   </head>
 
-  <body style="display: flex; justify-content: center;">
+  <body>
 
-    <!-- <header>
+    <header>
 
       <div class="nav-bar-container">
           <nav class="nav-bar">
@@ -30,67 +30,78 @@
                               <img class="etsy-logo" src="Resources/Homepage/Etsy_logo.svg.png" alt="Etsy Logo">
                           </a>
                           <button class="categories-button">
-                              <svg class="`Hamburger-menu`" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                              <svg class="Hamburger-menu" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                   focusable="false" viewBox="0 0 18 18">
                                   <rect x="2" y="8" width="14" height="2"></rect>
                                   <rect x="2" y="13" width="14" height="2"></rect>
                                   <rect x="2" y="3" width="14" height="2"></rect>
                               </svg>
-                        
-                        <div>      <span  class="svg_text"class="categories-text">Categories</span>
-                              <div class="tubble__title">Christmas</div>
-            <div class="  tubble__subtitle">Dec 25</div>
-                          
-          </div></button>
+                              <span class="categories-text">Categories</span>
+                          </button>
                       </div>
                       <div class="nav-middle-part">
                           <div class="search-bar">
+                              <button class="hidden-categories-button right-nav-link">
+                                  <span class="wt-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                          <path d="M21 7H3V5h18zm-5 6H3v-2h13zm5 6H3v-2h18z"></path>
+                                      </svg></span>
+                              </button>
                               <input class="search-input" placeholder="Search for anything">
-                              <button class="search-button">
-                                  <span class="search-button-icon"><svg class="right-nav-icons search-icon"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13">
-                                          </path>
-                        
-                        <div>                </sv class="svg_text"g></span>
-                                      <div class="tubble__title">Christmas</div>
-            <div class="  tubble__subtitle">Dec 25</div>
-                          
-          </div></button>
+                              <div class="search-button-container">
+                                  <button class="search-button">
+                                      <span class="search-button-icon"><svg class="right-nav-icons search-icon"
+                                              xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13">
+                                              </path>
+                                          </svg></span>
+                                  </button>
+                              </div>
                           </div>
                       </div>
-                      <d
-                      <div>iv class="nav-ri class="svg_text"ght-part">
-                <b              <div class="tubble__title">Christmas</div>
-              <div class="tubble__subtitle">Dec 25</div>utton clas
-            </div>s="sign-in-btn">sign in
-
-                          </button>
-                          <a href="" class="right-nav-link">
+                      <div class="nav-right-part">
+                          <button class="sign-in-btn">sign in</button>
+                          <span class="right-nav-link-container">
+                              <a href="" class="right-nav-link">
                               <span class="etsy-icon right-nav-icons"><svg class="right-nav-icons"
-                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61">
+                                            d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61">
                                       </path>
                                   </svg></span></a>
-                          <a href="" class="right-nav-link"><span class="etsy-icon right-nav-icons"><svg
-                                      class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                      aria-hidden="true" focusable="false">
+                              <span class="right-nav-link-tooltip" id="nav-fav-button-tooltip">
+                                  Favorites
+                              </span>
+                          </span>
+                          <span class="right-nav-link-container">
+                              <a href="" class="right-nav-link"><span
+                                  class="etsy-icon right-nav-icons"><svg
+                                  class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                  aria-hidden="true" focusable="false">
                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
+                                            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
                                       </path>
                                   </svg></span></a>
-                          <a href="" class="right-nav-link"><span class="right-nav-icons etsy-icon"><svg
-                                      class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                      aria-hidden="true" focusable="false">
+                              <span class="right-nav-link-tooltip">
+                                  Gifts
+                              </span>
+                          </span>
+                          <span class="right-nav-link-container">
+                              <a href="" class="right-nav-link"><span
+                                  class="right-nav-icons etsy-icon"><svg
+                                  class="right-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                  aria-hidden="true" focusable="false">
                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.307l2.4-12zM7.82 15l-1.6-8h14.227l-1.6 8z">
+                                            d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.307l2.4-12zM7.82 15l-1.6-8h14.227l-1.6 8z">
                                       </path>
                                       <path
-                                          d="M10.667 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8.333 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0">
+                                              d="M10.667 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8.333 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0">
                                       </path>
                                   </svg></span></a>
+                              <span class="right-nav-link-tooltip">
+                                  Carts
+                              </span>
+                          </span>
                       </div>
                   </div>
               </div>
@@ -100,10 +111,10 @@
                           <a href="" class="gifts-link bottom-nav-links">
                               <span class="gifts-link-icon">
                                   <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                       focusable="false">
-                                  <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
-                                  </path>
+                                      focusable="false">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z">
+                                      </path>
                                   </svg>
                                   <span style="padding-left: 5px;">Gifts</span>
                               </span>
@@ -111,7 +122,7 @@
                       </li>
                       <li class="nav-list">
                           <a href="" class="bottom-nav-links">
-                              Festive Finds at Every Price
+                              Cyber deals
                           </a>
                       </li>
                       <li class="nav-list">
@@ -133,7 +144,7 @@
               </div>
           </nav>
       </div>
-    </header> -->
+  </header>
 
     <main class="max-width">
         <div id="header">
@@ -741,7 +752,10 @@
                   <p class="text_title">Vegetable Earrings</p>
                 </div>
             </div>
-            <a href="#" class="browse-link">Browse all →</a>
+            <a href="#" class="browse-link">Browse all 
+              <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+              </span>
+            </a>
         </div>
     
         <!-- Product Cards -->
@@ -760,7 +774,7 @@
             <!-- Card 2: Image -->
             <div class="product-card">
               <video class="product-media" muted>
-                  <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                  <source src="../Resources/gift_page_resources/Now/IMG_7339_1_usjdyp.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
               <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -771,7 +785,7 @@
             <!-- Card 3: Image -->
             <div class="product-card">
               <video class="product-media" muted>
-                  <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                  <source src="../Resources/gift_page_resources/Now/IMG_8623_kori4p.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
               <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -782,7 +796,7 @@
             <!-- Card 4: Video -->
             <div class="product-card">
               <video class="product-media" muted>
-                  <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                  <source src="../Resources/gift_page_resources/Now/vid1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
               <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -793,7 +807,7 @@
             <!-- Card 5: Image -->
             <div class="product-card">
               <video class="product-media" muted>
-                  <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                  <source src="../Resources/gift_page_resources/Now/vid2.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
               <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -804,7 +818,7 @@
             <!-- Card 6: Image -->
             <div class="product-card">
                 <video class="product-media" muted>
-                    <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                    <source src="../Resources/gift_page_resources/Now/vid3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -823,14 +837,17 @@
               <p class="text_title">Vegetable Earrings</p>
             </div>
         </div>
-        <a href="#" class="browse-link">Browse all →</a>
+        <a href="#" class="browse-link">Browse all 
+          <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+          </span>
+        </a>
       </div>
 
       <div class="product-row">
         <!-- Card 1: Video -->
         <div class="product-card">
             <video class="product-media" muted>
-                <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                <source src="../Resources/gift_page_resources/Now/vid01.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -841,7 +858,7 @@
         <!-- Card 2: Image -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/vid02.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -852,7 +869,7 @@
         <!-- Card 3: Image -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/IMG_7339_1_usjdyp.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -863,7 +880,7 @@
         <!-- Card 4: Video -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/vid03.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -874,7 +891,7 @@
         <!-- Card 5: Image -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/a1.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -885,7 +902,7 @@
         <!-- Card 6: Image -->
         <div class="product-card">
             <video class="product-media" muted>
-                <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                <source src="../Resources/gift_page_resources/Now/a2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -904,14 +921,17 @@
               <p class="text_title">Vegetable Earrings</p>
             </div>
         </div>
-        <a href="#" class="browse-link">Browse all →</a>
+        <a href="#" class="browse-link">Browse all
+          <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+          </span>
+        </a>
       </div>
 
       <div class="product-row">
         <!-- Card 1: Video -->
         <div class="product-card">
             <video class="product-media" muted>
-                <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                <source src="../Resources/gift_page_resources/Now/vid3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -922,7 +942,7 @@
         <!-- Card 2: Image -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/vid1.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -944,7 +964,7 @@
         <!-- Card 4: Video -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/a3.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -955,7 +975,7 @@
         <!-- Card 5: Image -->
         <div class="product-card">
           <video class="product-media" muted>
-              <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+              <source src="../Resources/gift_page_resources/Now/vid01.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -966,7 +986,7 @@
         <!-- Card 6: Image -->
         <div class="product-card">
             <video class="product-media" muted>
-                <source src="../Resources/gift_page_resources/browse_by_Interest/brokly_earings_video.mp4" type="video/mp4">
+                <source src="../Resources/gift_page_resources/Now/IMG_8623_kori4p.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p class="gray_title">Broccoli Earrings/Vegetable Earrings</p>
@@ -979,7 +999,10 @@
       <!-- Section Header -->
       <div class="section-header">
           <p>Related gift ideas for: <strong>Jewelry</strong></p>
-          <a href="" class="browse-link">Browse all →</a>
+          <a href="" class="browse-link">Browse all 
+            <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+            </span>
+          </a>
       </div>
 
       <!-- Gift Idea Cards -->
@@ -1073,7 +1096,10 @@
             <p>For your sibling</p>
           </div>
       </div>
-      <a href="#" class="browse-link">Shop all →</a>
+      <a href="#" class="browse-link">Shop all 
+        <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+        </span>
+      </a>
     </div>
 
     <!-- Gift Cards Container -->
@@ -1128,7 +1154,10 @@
             <p>For your sibling</p>
           </div>
       </div>
-      <a href="#" class="browse-link">Shop all →</a>
+      <a href="#" class="browse-link">Shop all 
+        <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.414 12-5.707 5.707-1.414-1.414L14.586 13H6v-2h8.586l-3.293-3.293 1.414-1.414z"></path></svg>
+        </span>
+      </a>
     </div>
 
     <!-- Gift Cards Container -->
@@ -1182,389 +1211,60 @@
 
       <!-- Individual Cards -->
       <div class="shop-card">
-          <div class="icon-container coworker"></div>
+          <div class="icon-container coworker"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M37.273 19.758c-1.25.483-2.612.413-3.49.218l.434-1.952c.622.138 1.56.168 2.335-.132.695-.269 1.305-.808 1.456-2.016l1.984.248c-.249 1.992-1.389 3.12-2.719 3.634ZM12.486 21.32a5.772 5.772 0 0 1-1.662-2.094l1.82-.828a3.78 3.78 0 0 0 1.06 1.336c.489.375 1.046.563 1.708.385.663-.178 1.052-.619 1.288-1.188a3.78 3.78 0 0 0 .25-1.687l1.99-.193a5.772 5.772 0 0 1-.392 2.645c-.41.99-1.21 1.978-2.618 2.355-1.407.377-2.594-.078-3.444-.73Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M27.03 8.243 26.72 7h8.914c3.05 0 6.074 2.206 7.296 5v.001A7.963 7.963 0 0 1 44 16a7.998 7.998 0 0 1-4.11 6.992c.416.236.807.51 1.175.813l2.082-1.202 4.5 7.794-2.16 1.247c.933 3.32 1.306 6.831 1.51 9.273l-1.994.166c-.192-2.31-.53-5.44-1.307-8.405A4.5 4.5 0 0 1 39.17 24.9c-.913-.58-1.962-.9-3.17-.9-3.47 0-6.122 3.134-7.515 6.967 1.404 3.007 1.73 6.61 1.513 10.095l-1.996-.124c.244-3.91-.26-7.656-2.03-10.396-1.608-2.49-4.357-4.292-8.972-4.518V41h-2V26.024c-1.992.097-3.657.486-5.04 1.096a4.502 4.502 0 0 1-5.622 6.826c-.563 2.112-.65 4.494-.346 6.93l-1.984.248c-.35-2.79-.237-5.643.543-8.208L.353 31.647l4.5-7.794 3.323 1.918c.759-.416 1.59-.767 2.496-1.043a7.97 7.97 0 0 1-3.197-4.011 3.5 3.5 0 0 1-1.232-6.433A3.5 3.5 0 0 1 9.479 9.74a3.994 3.994 0 0 1 2.674-2.365 3.994 3.994 0 0 1 3.498.712 3.5 3.5 0 0 1 5.074 2.317 3.502 3.502 0 0 1 2.15 6.186 8.006 8.006 0 0 1-3.022 7.773c3.325.676 5.724 2.262 7.357 4.456 1.086-2.338 2.732-4.563 4.94-5.804A7.998 7.998 0 0 1 28 16c0-1.592.465-3.076 1.267-4.323a6.27 6.27 0 0 1-2.237-3.434Zm3.998 4.398a6 6 0 1 0 10.17.36h-8.075a6.303 6.303 0 0 1-2.095-.36Zm-10.232 3.806a6 6 0 1 0-11.592 3.106 6 6 0 0 0 11.592-3.106ZM5.585 26.585l-2.5 4.33 2.165 1.25a2.5 2.5 0 0 0 2.5-4.33l-2.165-1.25Zm37.165 4.33 2.165-1.25-2.5-4.33-2.165 1.25a2.5 2.5 0 0 0 2.5 4.33Z"></path></svg></div>
           <p>Coworker</p>
       </div>
 
       <div class="shop-card">
-          <div class="icon-container friend"></div>
+          <div class="icon-container friend"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M19.008 16.124c.1.802.45 1.978 1.207 2.979C20.995 20.137 22.229 21 24 21c1.771 0 3.005-.863 3.786-1.897a6.507 6.507 0 0 0 1.206-2.979l-1.984-.248a4.504 4.504 0 0 1-.819 2.022C25.712 18.53 25.03 19 24 19c-1.029 0-1.712-.47-2.19-1.102a4.502 4.502 0 0 1-.818-2.022l-1.984.248Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 23c1.123 0 2.15-.412 2.939-1.092a11.041 11.041 0 0 0 3.919 3.067c-3.268 1.424-5.883 4.243-7.887 7.36-2.894 4.501-4.68 9.872-5.449 13.456l1.956.419c.732-3.417 2.445-8.546 5.176-12.794C15.903 29.139 19.515 26 24 26s8.097 3.14 10.846 7.416c2.731 4.248 4.444 9.377 5.176 12.794l1.956-.42c-.768-3.583-2.555-8.954-5.45-13.456-2.003-3.116-4.618-5.935-7.886-7.359a11.04 11.04 0 0 0 3.919-3.067A4.483 4.483 0 0 0 35.5 23c.977 0 1.882-.311 2.62-.84a3 3 0 1 0 1.487-1.817 4.5 4.5 0 0 0-4.649-6.31C34.468 8.41 29.749 4 24 4c-5.75 0-10.468 4.41-10.958 10.032a4.5 4.5 0 0 0-4.649 6.31A3 3 0 1 0 9.88 22.16a4.48 4.48 0 0 0 2.62.84Zm2.5-8v-.03c1.514-.118 3.479-.606 5.292-1.813 1.462-.973 2.797-2.398 3.708-4.415.911 2.017 2.246 3.442 3.708 4.415 1.813 1.208 3.779 1.695 5.292 1.813V15a9 9 0 1 1-18 0Z"></path></svg></div>
           <p>Friend</p>
       </div>
 
       <div class="shop-card">
-          <div class="icon-container partner"></div>
+          <div class="icon-container partner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.69 6.35a4.445 4.445 0 0 0-6.38 0 4.639 4.639 0 0 0 0 6.46l.007.008L24 19.404l6.683-6.586.007-.007a4.638 4.638 0 0 0 0-6.461 4.445 4.445 0 0 0-6.38 0l-.31.317-.31-.317Zm-4.95 1.398a2.445 2.445 0 0 1 3.52 0L24 9.528l1.74-1.78a2.445 2.445 0 0 1 3.52 0 2.639 2.639 0 0 1 .006 3.659L24 16.596l-5.266-5.19a2.639 2.639 0 0 1 .006-3.658Z"></path><path d="M8.485 30.415a6.938 6.938 0 0 0 1.994 2.514c1.014.778 2.413 1.311 4.074.866 1.66-.445 2.605-1.606 3.094-2.787a6.938 6.938 0 0 0 .47-3.174l-1.99.193a4.945 4.945 0 0 1-.328 2.216c-.314.76-.848 1.375-1.764 1.62-.915.246-1.685-.02-2.338-.52a4.945 4.945 0 0 1-1.392-1.756l-1.82.828Zm19.525-1.271c.113.775.446 1.927 1.107 2.913C29.79 33.06 30.889 34 32.5 34s2.71-.941 3.383-1.943c.661-.987.993-2.138 1.107-2.913l-1.98-.288c-.08.558-.332 1.407-.788 2.087-.446.665-1 1.057-1.722 1.057-.721 0-1.276-.392-1.722-1.057-.456-.68-.707-1.529-.788-2.087l-1.98.288Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.894 16.409C15.708 14.85 21.67 17.84 24 23.199A11.999 11.999 0 0 1 35 16c6.586 0 11.932 5.305 12 11.875V36a7 7 0 0 1-7 7h-1v-3.683A11.98 11.98 0 0 1 35 40c-4.92 0-9.15-2.962-11.002-7.2a11.978 11.978 0 0 1-7.892 6.79c-6.402 1.716-12.982-2.083-14.697-8.484-1.716-6.402 2.083-12.982 8.485-14.697Zm-6.764 13.2c.053.326.123.653.21.979 1.43 5.335 6.913 8.5 12.248 7.071 4.414-1.183 7.343-5.14 7.413-9.493a13.02 13.02 0 0 1 0-.325 10.02 10.02 0 0 0-.648-3.383l-.622.167a10.003 10.003 0 0 1-10.63-3.71 10.003 10.003 0 0 1-7.35 8.528l-.621.166ZM35 38a9.966 9.966 0 0 0 4-.832V25H25.458a9.989 9.989 0 0 0-.456 2.825v.357C25.099 33.62 29.538 38 35 38Z"></path></svg></div>
           <p>Partner</p>
       </div>
 
       <div class="shop-card">
-          <div class="icon-container parent"></div>
+          <div class="icon-container parent"><path fill-rule="evenodd" clip-rule="evenodd" d="M30.681 10.889c1.081 2.595 1.667 5.16 1.984 7.11H25.56a9.046 9.046 0 0 1-2.874 2.732 12.794 12.794 0 0 1 4.45 2.585C28.602 21.58 30.859 20 34.02 20c4.919 0 7.604 3.717 8.608 6.111C43.376 27.896 43.78 29.66 44 31h-3.674A7.03 7.03 0 0 1 38 33.746a9.11 9.11 0 0 1 3.33 2.308C43.076 37.968 44 40.596 44 43.5v.5h-2v-.5c0-2.485-.787-4.607-2.148-6.096C38.5 35.924 36.522 35 33.986 35c-2.516 0-4.49.974-5.846 2.518-1.368 1.557-2.154 3.752-2.154 6.24V44h-2v-.242c0-2.9.917-5.586 2.651-7.56a9.202 9.202 0 0 1 3.387-2.436A7.03 7.03 0 0 1 27.674 31H24c.24-1.34.665-3.104 1.413-4.889.147-.351.336-.738.568-1.142C23.995 23.119 21.329 22 18.075 22c-3.75 0-6.722 1.487-8.77 3.87-2.061 2.397-3.23 5.754-3.23 9.53V44h-2v-8.6c0-4.177 1.293-8.02 3.713-10.834a12.85 12.85 0 0 1 5.676-3.835A9.046 9.046 0 0 1 10.591 18H3.75c.346-1.95.96-4.516 2.042-7.111C7.18 7.558 11.126 2 18.237 2c7.11 0 10.993 5.407 12.444 8.889ZM18.075 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM39 28a5 5 0 1 0-10 0 5 5 0 0 0 10 0Z"></path></div>
           <p>Parent</p>
       </div>
 
       <div class="shop-card">
-          <div class="icon-container sibling"></div>
+          <div class="icon-container sibling"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><g clip-path="url(#Icon=recipient_grandparent__a)"><path d="M8.551 17.316a6.427 6.427 0 0 0 1.343 2.241C10.598 20.312 11.636 21 13 21c1.352 0 2.428-.677 3.156-1.43.71-.735 1.206-1.661 1.33-2.406l-1.972-.329c-.043.256-.297.83-.795 1.345-.48.497-1.07.82-1.719.82-.636 0-1.181-.312-1.644-.807a4.435 4.435 0 0 1-.907-1.51l-1.898.633Zm24.326 4.676L33 21l.123-.992.017.001.095.008a5.071 5.071 0 0 0 1.622-.168c.898-.25 1.804-.804 2.181-2.124l1.924.55c-.623 2.18-2.217 3.125-3.57 3.501a7.075 7.075 0 0 1-2.441.224h-.011l-.038-.005-.016-.002h-.009Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.618 6.735A4 4 0 0 1 10.412 4h5.176a4 4 0 0 1 3.794 2.735l1.373 4.118A2 2 0 0 0 22 9h2a4.002 4.002 0 0 1-2.605 3.75A8.979 8.979 0 0 1 22 16a8.994 8.994 0 0 1-4.286 7.668c2.36.763 4.186 2.185 5.509 4.302.765 1.224 1.347 2.659 1.776 4.294l.043-.144c.836-2.796 2.383-5.458 5.207-6.937a9 9 0 1 1 12.567-10.005 4 4 0 1 1-1.379 6.892 9.048 9.048 0 0 1-2.626 2.538c1.898.685 3.579 1.924 4.96 3.6C46.458 31.463 48 36.334 48 42h-2c0-5.335-1.457-9.714-3.772-12.52-2.285-2.771-5.416-4.04-9.014-3.253-3.513.768-5.315 3.319-6.256 6.466C26.007 35.875 26 39.479 26 42h-2v-.003c0-5.962-.755-10.219-2.473-12.967-.664-1.062-1.487-1.922-2.51-2.57L14 32.846V42h-2v-9.154L6.982 26.46c-1.022.648-1.845 1.508-2.509 2.57C2.755 31.779 2 36.036 2 42H0c0-6.036.745-10.779 2.777-14.03 1.323-2.117 3.149-3.54 5.509-4.302A8.994 8.994 0 0 1 4 16c0-1.146.214-2.242.605-3.25A4.002 4.002 0 0 1 2 9v-.5h2V9a2 2 0 0 0 1.245 1.853l1.373-4.118ZM13 25c-1.605 0-2.98.199-4.158.59L13 30.88l4.158-5.292C15.98 25.2 14.605 25 13 25Zm0-2a7 7 0 0 0 6.326-10H6.674A7 7 0 0 0 13 23Zm14-6a7 7 0 1 0 13.999-.121c-2.713-.473-6.713-2.285-6.984-6.879h-.03c-.27 4.594-4.271 6.406-6.984 6.879L27 17Z"></path><path d="M35 30.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path></g><defs><clipPath id="Icon=recipient_grandparent__a"><path fill="#fff" d="M0 0h48v48H0z"></path></clipPath></defs></svg></div>
           <p>Sibling</p>
       </div>
 
       <div class="shop-card">
-          <div class="icon-container teacher"></div>
+          <div class="icon-container teacher"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M37 37a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM12.101 18.27c-1.078-.72-1.77-1.82-2.071-3.027l1.94-.486c.198.793.631 1.442 1.24 1.848.6.4 1.456.621 2.611.411l.358 1.968c-1.595.29-2.99.01-4.077-.715Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m2 20-.479.878-.63-.344.124-.708c.762-4.314 2.049-8.248 4.254-11.122C7.514 5.779 10.678 4 15 4s7.486 1.779 9.73 4.704c2.206 2.874 3.494 6.808 4.255 11.122l.125.708-.634.346-.005.002-.016.009-.025.013-.031.016a19.96 19.96 0 0 1-.97.462 28.92 28.92 0 0 1-2.808 1.07 32.267 32.267 0 0 1-4.127 1.041c1.444.876 2.742 2.146 3.832 3.84A18.089 18.089 0 0 1 26 30.704V25h22v16a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3v-3h11.663c-.517-4.236-1.596-7.374-3.019-9.584C20.651 25.318 17.963 24 15 24c-2.98 0-5.683 1.335-7.675 4.086C5.315 30.864 4 35.136 4 41H2c0-6.136 1.372-10.864 3.705-14.086 1.066-1.473 2.326-2.62 3.725-3.435a32.256 32.256 0 0 1-4.05-1.028 28.97 28.97 0 0 1-2.81-1.068 19.761 19.761 0 0 1-1.025-.492l-.016-.009-.005-.003h-.002L2 20Zm43 22a1 1 0 0 0 1-1V27H28v15h17Zm-19.034 0c-.024-.69-.06-1.356-.108-2H16v1a1 1 0 0 0 1 1h8.966ZM22 15a7 7 0 1 0-14 0 7 7 0 0 0 14 0Z"></path><path d="M16 27a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm0 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm0 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg></div>
           <p>Teacher</p>
       </div>
 
   </div>
 
 
-  <!-- Fifth Grid -->
-
-  <div class="related-gifts">
-    <!-- Section Header -->
-    <div class="section-header">
-        <p>Related gift ideas for: <strong>Jewelry</strong></p>
-        <a href="#" class="browse-link">Browse all →</a>
-    </div>
-
-    <!-- Gift Idea Cards -->
-    <div class="gift-cards">
-        <!-- Card 1 -->
-        <a href="" class="cliped  _cards">
-        
-        <div class="gift-card">
-          <div class="gift-text">The Photographer</div>
-          <div class="image-clip">
-              <img src="../Re sources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Photographer" />
-          </div> </a>
-        </div>
-
-        <!-- Card 2 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE PUZZLE PRODIGY</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Puzzle Prodigy">
-            </div>
-          </div>
-        </a>
-        <!-- Card 3 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE MAXIMALIST</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Maximalist">
-            </div>
-          </div>
-        </a>
-        <!-- Card 4 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE ART ADMIRER</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Art Admirer">
-            </div>
-          </div>
-        </a>
-        <!-- Card 5 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE MINIMALIST</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Minimalist">
-            </div>
-          </div>
-      </di>v>
-  </div>
-
-  <div class="related-gifts">
-
-    <!-- Gift Idea Cards -->
-      <div class="gift-cards">
-        <!-- Card 1 -->
-          <a href="" class="cliped  _cards">
-        
-        <div class="gift-card">
-          <div class="gift-text">The Photographer</div>
-          <div class="image-clip">
-              <img src="../Re sources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Photographer" />
-          </div> </a>
-        </div>
-
-        <!-- Card 2 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE PUZZLE PRODIGY</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Puzzle Prodigy">
-            </div>
-          </div>
-        </a>
-        <!-- Card 3 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE MAXIMALIST</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Maximalist">
-            </div>
-          </div>
-        </a>
-        <!-- Card 4 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE ART ADMIRER</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Art Admirer">
-            </div>
-          </div>
-        </a>
-        <!-- Card 5 -->
-          <a href="" class="cliped_cards">
-          <div class="gift-card">
-            <div class="gift-text">THE MINIMALIST</div>
-            <div class="image-clip">
-                <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Minimalist">
-            </div>
-          </div>
-      </di </a>v>
-  </div>
+ 
 
 
-  <!-- Sixth Grid -->
-  <div class="center_alignment">
-      <h2>Discover popular gifts sure to delight </h2>
-  </div>
-
-    <!-- Filter Buttons -->
-    <div class="filter-section">
-        <button class="filter-btn active">Jewelry</button>
-        <button class="filter-btn">Clothing</button>
-        <button class="filter-btn">Home Decor</button>
-        <button class="filter-btn">Accessories</button>
-        <button class="filter-btn">Pet Gifts</button>
-    </div>
-
-    <!-- Product Grid -->
-    <div class="product-grid">
-        <!-- Product Items -->
-        <div class="product-card">
-            <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Gold Shoe Pin">
-            <div class="price-tag">USD 40.00</div>
-        </div>
-        <div class="product-card">
-            <img src="product2.jpg" alt="Necklace on Neck">
-            <div class="price-tag">USD 68.00</div>
-        </div>
-        <div class="product-card">
-            <img src="product3.jpg" alt="Heart Necklaces">
-            <div class="price-tag">USD 50.00</div>
-        </div>
-        <div class="product-card">
-            <img src="product4.jpg" alt="Beaded Necklace">
-            <div class="price-tag">USD 65.00</div>
-        </div>
-        <div class="product-card">
-            <img src="product5.jpg" alt="Engraved Wood Plate">
-            <div class="price-tag">USD 28.99</div>
-        </div>
-        <div class="product-card">
-            <img src="product6.jpg" alt="Charm Necklace">
-            <div class="price-tag">USD 50.00</div>
-        </div>
-        <div class="product-card">
-            <img src="product7.jpg" alt="Gold Hoop Earring">
-            <div class="price-tag">USD 219.96</div>
-        </div>
-        <div class="product-card">
-            <img src="product8.jpg" alt="Colorful Beaded Earrings">
-            <div class="price-tag">USD 38.00</div>
-        </div>
-    </div>
-
-
-  <!-- Seventh Grid (Inspire your inner gifter) -->
-    <div class="pick">
-      <h4>Inspire your inner gifter!</h4>
-    </div>
-
-    <div class="related-gifts">
-      <!-- Section Header -->
-      <h2>Do they love to be around the table?</h2>
-    
-      <!-- Gift Idea Cards -->
-      <div class="gift-cards">
-          <!-- Card 1 -->
-          <a href="" class="cliped_car  ds">
-          
-          <div class="gift-card">
-            <div class="gift-text">The Photographer</div>
-            <div class="image-clip">
-                <img src="../Re sources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Photographer" />
-            </div> </a>
-          </div>
-    
-          <!-- Card 2 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE PUZZLE PRODIGY</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Puzzle Prodigy">
-              </div>
-            </div>
-          </a>
-          <!-- Card 3 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MAXIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Maximalist">
-              </div>
-            </div>
-          </a>
-          <!-- Card 4 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE ART ADMIRER</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Art Admirer">
-              </div>
-            </div>
-          </a>
-          <!-- Card 5 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MINIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Minimalist">
-              </div>
-            </div>
-        </di </a>v>
-    </div>
-
-    <div class="related-gifts">
-      <!-- Section Header -->
-      <h2>What's their style?</h2>
-    
-      <!-- Gift Idea Cards -->
-      <div class="gift-cards">
-          <!-- Card 1 --
-          <a href="" class="cliped_car  ds">
-          >
-          <div class="gift-card">
-            <div class="gift-text">The Photographer</div>
-            <div class="image-clip">
-                <img src="../Re sources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Photographer" />
-            </div> </a>
-          </div>
-    
-          <!-- Card 2 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE PUZZLE PRODIGY</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Puzzle Prodigy">
-              </div>
-            </div>
-          </a>
-          <!-- Card 3 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MAXIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Maximalist">
-              </div>
-            </div>
-          </a>
-          <!-- Card 4 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE ART ADMIRER</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Art Admirer">
-              </div>
-            </div>
-          </a>
-          <!-- Card 5 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MINIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Minimalist">
-              </div>
-            </div>
-        </di </a>v>
-    </div>
-
-    <div class="related-gifts">
-      <!-- Section Header -->
-      <h2>Do they love music?</h2>
-    
-      <!-- Gift Idea Cards -->
-      <div class="gift-cards">
-          <!-- Card 1 --
-          <a href="" class="cliped_car  ds">
-          >
-          <div class="gift-card">
-            <div class="gift-text">The Photographer</div>
-            <div class="image-clip">
-                <img src="../Re sources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Photographer" />
-            </div> </a>
-          </div>
-    
-          <!-- Card 2 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE PUZZLE PRODIGY</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Puzzle Prodigy">
-              </div>
-            </div>
-          </a>
-          <!-- Card 3 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MAXIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="The Maximalist">
-              </div>
-            </div>
-          </a>
-          <!-- Card 4 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE ART ADMIRER</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Art Admirer">
-              </div>
-            </div>
-          </a>
-          <!-- Card 5 -->
-          <a href="" class="cliped_cards">
-            <div class="gift-card">
-              <div class="gift-text">THE MINIMALIST</div>
-              <div class="image-clip">
-                  <img src="../Resources/gift_page_resources/2nd_Festive_Candle.jpg" alt="Minimalist">
-              </div>
-            </div>
-        </di </a>v>
-    </div>
+  
 
 
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="whole-footer">
 
           <div class="max-width-classddd justify-center">
               <div class="max-width-class">
                   <div class="email-list">
                       <form action="">
-                          <p>Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on
-                              Etsy.</p>
+                          <p>Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and
+                              selling on Etsy.</p>
                           <div class="email-list-input">
-                        
-                        <div>    <input type="e class="svg_text"mail" name="email-list-email" placeholder="Enter Your email" id="email-list-email">
-                    <b              <div class="tubble__title">Christmas</div>
-              <div class="tubble__subtitle">Dec 25</div>utton class=
-            </div>"email-submit" type="submit">Subscribe
-
-                              </button>
+                              <label for="email-list-email"></label>
+                              <input class="email-list-email" type="email" name="email-list-email"
+                                       placeholder="Enter Your email" id="email-list-email">
+                              <button class="email-submit" type="submit">Subscribe</button>
                           </div>
                       </form>
                   </div>
@@ -1576,25 +1276,37 @@
                       <span>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" focusable="false">
                               <path
-                                  d="M60.1 38H49v11h-2V38H35.9c1.931 9.368 6.626 17 12.1 17 5.474 0 10.171-7.632 12.1-17zm-25.145-9.5c-.003 2.511.19 5.019.577 7.5H47V18.522l-10.925.238a41.683 41.683 0 00-1.12 9.74zM47 2.31c-4.1 1.24-8.18 7.168-10.38 14.437L47 16.52V2.31z">
+                                  d="M60.1 38H49v11h-2V38H35.9c1.931 9.368 6.626 17 12.1 17 5.474 0 10.171-7.632
+                                  12.1-17zm-25.145-9.5c-.003 2.511.19 5.019.577 7.5H47V18.522l-10.925.238a41.683
+                                  41.683 0 00-1.12 9.74zM47 2.31c-4.1 1.24-8.18 7.168-10.38 14.437L47 16.52V2.31z">
                               </path>
                               <path
-                                  d="M57.52 9.45l1.784-.9a31.775 31.775 0 012.558 7.65l9.117-.2.042 2-8.78.19c.55 3.41.818 6.857.8 10.31a50.836 50.836 0 01-.54 7.5H72v2h-9.846c-1.6 8.2-5.244 15.053-9.862 17.754C66.834 54.079 76 43.793 76 28.589c0-8.962-2.958-16.353-8.554-21.373A25.424 25.424 0 0049 1.04v15.438l10.83-.236a29.32 29.32 0 00-2.31-6.791zM43.51 55.643c-4.525-2.78-8.086-9.564-9.665-17.643H24v-2h9.5a50.84 50.84 0 01-.549-7.5 43.776 43.776 0 011.075-9.7l-9.009.2-.042-2 9.562-.208c1.89-6.667 5.317-12.436 9.432-15.143C29.71 4.412 20 15.13 20 28.589a27.636 27.636 0 0023.51 27.054z">
+                                  d="M57.52 9.45l1.784-.9a31.775 31.775 0 012.558 7.65l9.117-.2.042 2-8.78.19c.55
+                                  3.41.818 6.857.8 10.31a50.836 50.836 0 01-.54 7.5H72v2h-9.846c-1.6 8.2-5.244
+                                  15.053-9.862 17.754C66.834 54.079 76 43.793 76
+                                  28.589c0-8.962-2.958-16.353-8.554-21.373A25.424 25.424 0 0049
+                                  1.04v15.438l10.83-.236a29.32 29.32 0 00-2.31-6.791zM43.51
+                                  55.643c-4.525-2.78-8.086-9.564-9.665-17.643H24v-2h9.5a50.84 50.84 0 01-.549-7.5
+                                  43.776 43.776 0 011.075-9.7l-9.009.2-.042-2 9.562-.208c1.89-6.667 5.317-12.436
+                                  9.432-15.143C29.71 4.412 20 15.13 20 28.589a27.636 27.636 0 0023.51 27.054z">
                               </path>
                               <path
-                                  d="M61.045 28.5a60.27 60.27 0 00-.818-10.265L49 18.479v17.52h11.468c.388-2.48.58-4.988.577-7.5zM91.7 60c-2.182 4.525-5.734 8.62-10.832 13.719l-1.414-1.414c6.6-6.6 10.511-11.424 12.08-17.7.072-.415.137-.832.215-1.278.607-3.48.262-5.951-1.027-6.068-.72-.066-1.559.68-1.947 2.3a30.158 30.158 0 01-2.454 8.148c-1.78 4.663-8.575 11.048-8.865 11.318l-1.366-1.461c.068-.063 6.8-6.391 8.381-10.62l.061-.133a30.644 30.644 0 002.526-9.148c.11-1.886.095-6.433-1.793-6.552-2.085-.132-2.537 3.505-3.367 7.379-.259 1.21-.89 3.456-1.153 4.243a1.55 1.55 0 01-.09.177c-1.386 4.053-5.32 7.859-5.515 8.045-2.984 2.983-9.707 9.74-9.707 9.74L64.01 69.3s6.726-6.761 9.727-9.761a28.158 28.158 0 003.064-3.6c.5-.788 1.452-2.646.55-3.572-1.148-1.178-3.287-.648-6.08.748-1.98.992-11.21 7.08-15.384 13.34-1.99 2.985-2.772 8.839-3.042 14.2l13.18 2.724 6.8 1.359a8.92 8.92 0 011-.778c7.075-4.74 14.663-11.833 17.317-16.54 3.566-6.32 1.988-7.52.558-7.42zM52.774 82.673l-.77 10.252 1.993.15.595-7.913 10.616 2.123 3.765.778L70.02 93.2l1.96-.4-.885-4.338 2.592.518.392-1.96-8.447-1.69-12.858-2.657zm-29.242 2.055l6.77-1.354 13.206-2.73c-.27-5.36-1.052-11.214-3.042-14.2-4.173-6.258-13.4-12.347-15.384-13.34-2.793-1.4-4.932-1.925-6.08-.747-.9.926.054 2.784.55 3.572a28.158 28.158 0 003.064 3.6c3 3 9.727 9.76 9.727 9.76l-1.418 1.41s-6.723-6.757-9.707-9.74c-.2-.186-4.129-3.992-5.515-8.045a1.74 1.74 0 01-.09-.177c-.263-.787-.894-3.033-1.153-4.243-.83-3.874-1.282-7.511-3.367-7.38-1.888.12-1.9 4.667-1.793 6.553a30.645 30.645 0 002.526 9.148l.061.133c1.58 4.229 8.313 10.557 8.381 10.62L18.9 69.034c-.29-.27-7.084-6.655-8.865-11.318a30.16 30.16 0 01-2.454-8.148c-.388-1.622-1.226-2.37-1.947-2.3-1.287.114-1.634 2.586-1.025 6.065.078.446.143.863.215 1.278C6.394 60.883 10.3 65.7 16.9 72.307l-1.41 1.414c-5.1-5.1-8.65-9.194-10.832-13.72-1.434-.104-3.013 1.1.553 7.42 2.654 4.706 10.238 11.8 17.321 16.529a8.92 8.92 0 011 .778zm7.175.605l-8.433 1.687.393 1.96 2.591-.518-.885 4.338 1.96.4 1.047-5.137 3.75-.775 10.631-2.126.595 7.913 1.994-.15-.77-10.252-12.873 2.66z">
+                                  d="M61.045 28.5a60.27 60.27 0 00-.818-10.265L49
+                                  18.479v17.52h11.468c.388-2.48.58-4.988.577-7.5zM91.7 60c-2.182 4.525-5.734 8.62-10.832 13.719l-1.414-1.414c6.6-6.6 10.511-11.424 12.08-17.7.072-.415.137-.832.215-1.278.607-3.48.262-5.951-1.027-6.068-.72-.066-1.559.68-1.947 2.3a30.158 30.158 0 01-2.454 8.148c-1.78 4.663-8.575 11.048-8.865 11.318l-1.366-1.461c.068-.063 6.8-6.391 8.381-10.62l.061-.133a30.644 30.644 0 002.526-9.148c.11-1.886.095-6.433-1.793-6.552-2.085-.132-2.537 3.505-3.367 7.379-.259 1.21-.89 3.456-1.153 4.243a1.55 1.55 0 01-.09.177c-1.386 4.053-5.32 7.859-5.515 8.045-2.984 2.983-9.707 9.74-9.707 9.74L64.01 69.3s6.726-6.761 9.727-9.761a28.158 28.158 0 003.064-3.6c.5-.788 1.452-2.646.55-3.572-1.148-1.178-3.287-.648-6.08.748-1.98.992-11.21 7.08-15.384 13.34-1.99 2.985-2.772 8.839-3.042 14.2l13.18 2.724 6.8 1.359a8.92 8.92 0 011-.778c7.075-4.74 14.663-11.833 17.317-16.54 3.566-6.32 1.988-7.52.558-7.42zM52.774 82.673l-.77 10.252 1.993.15.595-7.913 10.616 2.123 3.765.778L70.02 93.2l1.96-.4-.885-4.338 2.592.518.392-1.96-8.447-1.69-12.858-2.657zm-29.242 2.055l6.77-1.354 13.206-2.73c-.27-5.36-1.052-11.214-3.042-14.2-4.173-6.258-13.4-12.347-15.384-13.34-2.793-1.4-4.932-1.925-6.08-.747-.9.926.054 2.784.55 3.572a28.158 28.158 0 003.064 3.6c3 3 9.727 9.76 9.727 9.76l-1.418 1.41s-6.723-6.757-9.707-9.74c-.2-.186-4.129-3.992-5.515-8.045a1.74 1.74 0 01-.09-.177c-.263-.787-.894-3.033-1.153-4.243-.83-3.874-1.282-7.511-3.367-7.38-1.888.12-1.9 4.667-1.793 6.553a30.645 30.645 0 002.526 9.148l.061.133c1.58 4.229 8.313 10.557 8.381 10.62L18.9 69.034c-.29-.27-7.084-6.655-8.865-11.318a30.16 30.16 0 01-2.454-8.148c-.388-1.622-1.226-2.37-1.947-2.3-1.287.114-1.634 2.586-1.025 6.065.078.446.143.863.215 1.278C6.394 60.883 10.3 65.7 16.9 72.307l-1.41 1.414c-5.1-5.1-8.65-9.194-10.832-13.72-1.434-.104-3.013 1.1.553 7.42 2.654 4.706 10.238 11.8 17.321 16.529a8.92 8.92 0 011 .778zm7.175.605l-8.433 1.687.393 1.96 2.591-.518-.885 4.338 1.96.4 1.047-5.137 3.75-.775 10.631-2.126.595 7.913 1.994-.15-.77-10.252-12.873 2.66z">
                               </path>
                           </svg>
                       </span>
                   </span>
-                  <span class="renewable-text">
+                  <span class="renewable-text dashed-underline">
                       Etsy is powered by 100% renewable electricity.
-                  </span
-                  <div> class="svg_text">
-                  <div class="tubble__title">Christmas  </div>
-            <div class="tubble__subtitle">Dec 25</div>  
-     
-     </div>     </button>
+                  </span>
+              </button>
+              <div class="question-explanation">
+                  Etsy’s 100% renewable electricity commitment includes the electricity used by the data centers that
+                  host Etsy.com, the Sell on Etsy app, and the Etsy app, as well as the electricity that powers Etsy’s
+                  global offices and employees working remotely from home in the US.
+                  <span class="popover_arrow" style="position: absolute; left: 115px;"></span>
+              </div>
           </div>
           <div class="footer-middle-container">
               <div class="footer-middle-links">
@@ -1621,7 +1333,7 @@
                                       <li>Etsy Blog</li>
                                       <li>Etsy United Kingdom</li>
                                       <li>Etsy Germany</li>
-                                      <li>Etsy canada</li>
+                                      <li>Etsy Canada</li>
                                   </ul>
                               </div>
                           </div>
@@ -1720,13 +1432,14 @@
                       <div class="last-left-container">
                           <div class="region-div">
                               <a href="">
-                                  <span class="globe-icon-svg footer-nav-icon"><svg class="globe-icon-svg footer-nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                          aria-hidden="true" focusable="false">
+                                  <span class="globe-icon-svg footer-nav-icon"><svg
+                                          class="globe-icon-svg footer-nav-icons" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                           <path
                                               d="M12,2A10,10,0,1,0,22,12,10.012,10.012,0,0,0,12,2ZM9,18.883v0.528A7.938,7.938,0,0,1,4.06,11.06l3.385,3.385a2.967,2.967,0,0,0,1.649,4.4ZM17.5,15a2.509,2.509,0,0,0,.5-0.05V15a0.992,0.992,0,0,0,.927.985A8,8,0,0,1,12,20c-0.216,0-.427-0.016-0.639-0.032l1.254-2.5-0.015.006A2.968,2.968,0,0,0,13,16a2.988,2.988,0,0,0-5-2.221V11H9a1,1,0,0,0,1-1V9a1,1,0,0,0,1-1,1,1,0,0,0,0-2H6.726A7.9,7.9,0,0,1,14,4.263V6a1,1,0,0,0,2,0V5.082a8.047,8.047,0,0,1,2,1.649V7H17a1,1,0,0,0,0,2h2.411a7.941,7.941,0,0,1,.326,1H17a2.556,2.556,0,0,0-2,2.5A2.5,2.5,0,0,0,17.5,15Z">
                                           </path>
-                                  </svg></span>
-                                  Ethiopia | English (US) $(USD)
+                                      </svg></span>
+                                  <span>&nbsp; Ethiopia &nbsp; | &nbsp; English (US) &nbsp; | &nbsp; $ (USD)</span>
                               </a>
                           </div>
                       </div>
@@ -1734,27 +1447,27 @@
                           <span>&copy;2024 Etsy, Inc.</span>
                           <ul class="last-link-list">
                               <li><a href="">
-                                  Terms of Use
-                              </a></li>
+                                      Terms of Use
+                                  </a></li>
                               <li><a href="">
-                                  Privacy
-                              </a></li>
+                                      Privacy
+                                  </a></li>
                               <li><a href="">
-                                  Interest-based ads
-                              </a></li>
+                                      Interest-based ads
+                                  </a></li>
                               <li><a href="">
-                                  Local Shops
-                              </a></li>
+                                      Local Shops
+                                  </a></li>
                               <li><a href="">
-                                  Regions
-                              </a></li>
+                                      Regions
+                                  </a></li>
                           </ul>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-    </footer> -->
+  </footer>
 
   </body>
 </html>
