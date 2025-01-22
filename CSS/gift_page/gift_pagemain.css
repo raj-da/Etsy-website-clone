@@ -377,16 +377,6 @@
 }
 
 
-.browse-link {
-    text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.browse-link:hover {
-    text-decoration: underline;
-}
 
 /* Product Row */
 .product-row {
@@ -506,8 +496,9 @@
 
 .browse-link {
     text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
+    color:#222;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 .browse-link:hover {
@@ -743,39 +734,7 @@
     align-items: center;
 }
 
-.icon-container::before {
-    content: "";
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    width: 24px;
-    height: 24px;
-}
 
-/* Icons for Each Card */
-.coworker::before {
-    background-image: url('https://via.placeholder.com/24?text=C'); /* Replace with coworker icon */
-}
-
-.friend::before {
-    background-image: url('https://via.placeholder.com/24?text=F'); /* Replace with friend icon */
-}
-
-.partner::before {
-    background-image: url('https://via.placeholder.com/24?text=P'); /* Replace with partner icon */
-}
-
-.parent::before {
-    background-image: url('https://via.placeholder.com/24?text=PA'); /* Replace with parent icon */
-}
-
-.sibling::before {
-    background-image: url('https://via.placeholder.com/24?text=S'); /* Replace with sibling icon */
-}
-
-.teacher::before {
-    background-image: url('https://via.placeholder.com/24?text=T'); /* Replace with teacher icon */
-}
 
 /* Text */
 .shop-card p {
@@ -796,13 +755,6 @@
     font-weight: 500;
     line-height: 1.25;
 }
-
-
-
-
-
-/*<!-- Sixth Grid -->*/
-
 
 
 
@@ -838,7 +790,7 @@
 /* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -873,4 +825,12 @@
     font-weight: bold;
     padding: 5px 8px;
     border-radius: 5px;
+}
+
+
+@media (max-width: 900px){
+    .container_grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
 }
